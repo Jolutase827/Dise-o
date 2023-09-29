@@ -1,43 +1,163 @@
+
+/*
+Toda información de CSS irá en un documento externo (hay que quitar los styles del HTML)
+*/
+
+*{
+    /*Se definirá una fuente manera genérica para todo el documento*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*Todos los textos irán centrados respecto su contenedor.*/
+    text-align: center;
+    /*El tamaño de los textos se ha de definir como relativo*/
+    font-size: 100% ;
+    margin: 0;
+}
 table{
     margin: auto;
+    border-spacing: 7px;
+    /*Los bordes de la tabla serán invisibles*/
+    border: hidden;
 }
 th{
     width: 200px;
-    height: 25px;
-    text-align: left;
+    height: 80px;
     background-repeat: no-repeat;
+    /*que se alineará a la esquina inferior derecha.*/
     background-position-x:right ;
     background-position-y:bottom ;
     background-size: cover;
+    /*Los bordes de la tabla serán invisibles*/
+    border:none 2px;
 }
 
+/*A los tramos horarios libres se les dará estilo con la pseudoclase :empty*/
+th:empty{
+    background-color: bisque;
+   
+}
 
-
+/*SÓLO se definirán clases para cada uno de los módulos o asignaturas, el resto de selectores tendrán que utilizar las etiquetas o atributos*/
 .cliente{
-    background-image: url('');
-    text-align: center;
+    /*Añade a cada asignatura una imagen de fondo de la celda*/
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-garabato-dibujado-mano_23-2149915661.jpg');
 }
 .servidor{
-    background-image: url('');
-    text-align: center;
+    /*Añade a cada asignatura una imagen de fondo de la celda*/
+    background-image: url('https://img.freepik.com/vector-premium/fondo-garabato-abstracto-diseno-plano-dibujado-mano_23-2149320110.jpg');
 }
 .empresa{
+    /*Añade a cada asignatura una imagen de fondo de la celda*/
     background-image: url('https://i.pinimg.com/736x/d8/bc/4e/d8bc4ecaeae4a334833c5eda60fa85d2.jpg');
-    text-align: center;
 }
+.empresa>a{
+     /*exepto una de las asignaturas que llevará la fuente Comics San.*/
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
 .diseño{
-    background-image: url('');
-    text-align: center;
+    /*Añade a cada asignatura una imagen de fondo de la celda*/
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/467/246/non_2x/nature-landscape-background-cute-simple-cartoon-style-free-vector.jpg');
 }
 .despligues{
-    background-image: url('');
-    text-align: center;
+    /*Añade a cada asignatura una imagen de fondo de la celda*/
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/436/269/non_2x/cartoon-landscape-background-vector.jpg');
 }
 .tutoria{
-    background-image: url('');
-    text-align: center;
+    /*Añade a cada asignatura una imagen de fondo de la celda*/
+    background-image: url('https://static.vecteezy.com/system/resources/previews/011/443/504/non_2x/pink-cartoon-flowers-background-seamless-pattern-eps-simple-modern-abstract-summer-floral-print-design-vector.jpg');
 }
-.recreo{
-    background-image: url('');
-    text-align: center;
+
+
+
+/*Por defecto sólo se verá la abreviatura del módulo asignatura, cuando se pase el ratón sobre ella, aparecerá el resto de la información (Nombre completo y nombre del docente)*/
+
+.cliente:hover::after {
+    content: "\A \A Cliente \A Fajardo"; 
+    white-space: pre; 
+    color: black;
+    -webkit-text-stroke: 0px;
+
+  }
+  .servidor:hover::after {
+    content: "\A \A Servidor \A Javier"; 
+    white-space: pre; 
+    color: black;
+    -webkit-text-stroke: 0px;
+
+  }
+  .diseño:hover::after {
+    content: "\A \A Diseño \A Fran"; 
+    white-space: pre; 
+    color: black;
+    -webkit-text-stroke: 0px;
+
+  }
+  .despligues:hover::after {
+    content: "\A \A Despliegues \A Jose David"; 
+    white-space: pre; 
+    color: black;
+    -webkit-text-stroke: 0px;
+  }
+  .tutoria:hover::after {
+    content: "\A \A Tutoria \A Javier"; 
+    white-space: pre; 
+    color: black;
+    -webkit-text-stroke: 0px;
+
+  }
+  .empresa:hover::after {
+    content: "\A \A Empresa \A Itziar"; 
+    white-space: pre; 
+    color: black;
+    -webkit-text-stroke: 0px;
+
+  }
+
+/*Los enlaces visitados y no visitados tendrán el mismo estilo (sobreescribir el comportamiento por defecto del navegador)*/
+a:visited,a:link{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+a:hover{
+    text-shadow:-1px -1px 0 #fc0000, 1px -1px 0 #fc0000, -1px 1px 0 #fc0000, 1px 1px 0 #fc0000;
+}
+
+/*Cuando coloquemos el ratón sobre una asignatura su borde se volverá visible y de un color diferente para cada asignatura.*/
+table tr:nth-child(n+2):hover>.empresa:hover{
+  border: aqua solid;
+}
+
+table tr:nth-child(n+2):hover>.tutoria:hover{
+  border: rgb(238, 255, 0) solid;
+}
+
+table tr:nth-child(n+2):hover>.diseño:hover{
+  border: rgb(38, 0, 255) solid;
+}
+
+table tr:nth-child(n+2):hover>.despligues:hover{
+  border: rgb(255, 0, 0) solid;
+}
+
+table tr:nth-child(n+2):hover>.cliente:hover{
+  border: rgb(136, 255, 0) solid;
+}
+
+table tr:nth-child(n+2):hover>.servidor:hover{
+  border: rgb(255, 0, 221) solid;
+}
+
+/*Cuando coloquemos el ratón sobre cualquier asignatura, el borde del resto de asignaturas que empiezan a esa hora se hará visible y de color gris así como la casilla de la hora a la que empiezan esas asignaturas. Dicho de otra forma, cuando coloque el cursor sobre una casilla, todos los elementos de esa fila tendrán el borde gris, siempre y cuando sean asignaturas que empiezan a esa hora. Si coloco el cursor sobre una asignatura, esta seguirá teniendo el borde del color que se le había dado en el apartado anterior, serán el resto de casillas de la fila las que en este caso tendrán que cambiar de color.*/
+table tr:nth-child(n+2):hover>th{
+    border: gray solid 2px;
+}
+
+/*Cuando coloquemos el cursor sobre las horas de recreo, su color de fondo cambiará.*/
+table tr:nth-child(5) th:nth-child(2) {
+    background-color: rgb(245, 70, 70);    
+}
+table tr:nth-child(5) th:nth-child(2):hover{
+    background-color: rgb(245, 165, 165);    
 }
