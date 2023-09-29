@@ -1,0 +1,6 @@
+p::first-letter{
+    text-transform: uppercase;
+}
+p::after{
+    content: "!";
+}

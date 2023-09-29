@@ -1,0 +1,43 @@
+table{
+    margin: auto;
+}
+th{
+    width: 200px;
+    height: 25px;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-position-x:right ;
+    background-position-y:bottom ;
+    background-size: cover;
+}
+
+
+
+.cliente{
+    background-image: url('');
+    text-align: center;
+}
+.servidor{
+    background-image: url('');
+    text-align: center;
+}
+.empresa{
+    background-image: url('https://i.pinimg.com/736x/d8/bc/4e/d8bc4ecaeae4a334833c5eda60fa85d2.jpg');
+    text-align: center;
+}
+.diseño{
+    background-image: url('');
+    text-align: center;
+}
+.despligues{
+    background-image: url('');
+    text-align: center;
+}
+.tutoria{
+    background-image: url('');
+    text-align: center;
+}
+.recreo{
+    background-image: url('');
+    text-align: center;
+}
