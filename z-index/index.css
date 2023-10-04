@@ -1,0 +1,26 @@
+div{
+    width: 12%;
+    height: 24%;
+    border: 1px solid;
+    border-color: blue;
+}
+#gris{
+    background-color: rgb(145, 145, 145);
+    z-index: 3;
+    position: absolute;
+}
+#orange{
+    background-color: rgb(241, 178, 84);
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    
+}
+#blue{
+    background-color: rgb(121, 229, 243);
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
