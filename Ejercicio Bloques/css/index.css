@@ -1,0 +1,64 @@
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 5vw;
+
+}
+.contenedor{
+    background-image: url('https://img.freepik.com/vector-gratis/escenario-pista-baile-iluminado-focos-azules-rosas_107791-6473.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 35vw;
+    width: 35vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+div>div:nth-child(odd){
+    background-image: url('https://assets.stickpng.com/thumbs/5856b3d14f6ae202fedf2793.png');
+}
+
+div>div{
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div>div:nth-child(even){
+    background-image: url('https://assets.stickpng.com/images/5856b3da4f6ae202fedf2794.png');
+}
+div>h1{
+    grid-area: 4/1/5/4;
+    text-align: center;
+    display: none;
+    font-size: 3.5vw;
+    justify-self: center;
+}
+.malo:hover{
+    background-image: url('https://megastar-cdnmed.agilecontent.com/resources/jpg/1/7/1631687850571.jpg');
+}
+.bueno:hover{
+    background-image: url('https://www.emp-online.es/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwa42e1dcd/images/3/8/1/9/381967a.jpg?sw=1000&sh=800&sm=fit&sfrm=png');
+}
+.legendario:hover{
+    background-image: url('https://www.mondosonoro.com/wp-content/uploads/2015/11/coldplay1.jpg');
+}
+.malo:hover~#tmalo{
+    background-color: aliceblue;
+    display: flex;
+}
+.bueno:hover~#tbueno{
+    background-color: aliceblue;
+    display: flex;
+}
+.legendario:hover~#tlengendario{
+    background-color: aliceblue;
+    display: flex;
+}
