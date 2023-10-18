@@ -127,6 +127,7 @@ div[class*="fila"]:hover>.Icasilla{
 }
 .stats>h2{
     text-align: center;
+    font-size: medium;
 }
 .stats>h2:nth-child(odd){
     color: #365746;
