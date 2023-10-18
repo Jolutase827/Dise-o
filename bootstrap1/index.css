@@ -1,0 +1,38 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    border: solid 1px;
+}
+header{
+    height: 20vh;
+    background-color: greenyellow;
+}
+.mderecha{
+    height: 60vh;
+    background-color: red;
+}
+main{
+    background-color: blanchedalmond;
+    height: 60vh;
+}
+footer{
+    height: 10vh;
+    background-color: greenyellow;
+}
+nav{
+    background-color: pink;
+    height: 10%;
+}
+article{
+    background-color: orange;
+}
+section{
+    background-color: blue;
+}
+.sections{
+    height: 45%;
+}
+.articulos{
+    height: 45%;
+}
