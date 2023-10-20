@@ -21,6 +21,13 @@ body{
 .card-title{
     font-size: 150%;
 }
+.blanco{
+    color: rgb(175, 175, 175);
+}
+footer{
+    color: black;
+    background-color: rgb(182, 182, 182);
+}
 .mderecha{
     border: solid 1px;
 }
