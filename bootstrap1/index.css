@@ -2,37 +2,46 @@
 *{
     padding: 0;
     margin: 0;
-    border: solid 1px;
 }
-header{
-    height: 20vh;
-    background-color: greenyellow;
+body{
+    background-color: rgb(68, 68, 68);
+}
+
+.card{
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+.fondo{
+    background-color: black;
+    color: white;
+}
+.botones{
+    width: 100%;
+}
+.card-title{
+    font-size: 150%;
 }
 .mderecha{
-    height: 60vh;
-    background-color: red;
+    border: solid 1px;
 }
-main{
-    background-color: blanchedalmond;
-    height: 60vh;
+article,section, main>nav{
+    margin-bottom: 5vh;
 }
-footer{
-    height: 10vh;
-    background-color: greenyellow;
+.amarillo{
+    color: rgb(158, 158, 0);
 }
-nav{
-    background-color: pink;
-    height: 10%;
+.img1{
+    background-image: url('https://www.zonamovilidad.es/fotos/editor/31527/1673602264_alpine-6.jpg');
 }
-article{
-    background-color: orange;
+.img2{
+    background-image: url('https://www.coches.com/fotos_historicas/alpine/Vision-Concept-2016/alpine_vision-concept-2016_r6.jpg');
 }
-section{
-    background-color: blue;
+.img3{
+    background-image: url('https://www.f1latam.com/autos/img/prin/ren_spo_06.jpg');
 }
-.sections{
-    height: 45%;
-}
-.articulos{
-    height: 45%;
+.img1,.img2,.img3{
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

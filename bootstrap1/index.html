@@ -8,31 +8,260 @@
     <title>Bootstrap1</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <header class="row"></header>
+    <div class="container fondo">
+        <header class="row">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">REN<img src="https://static-00.iconduck.com/assets.00/renault-icon-410x512-ah1vduus.png" loading="lazy" class="icon loaded" onload="LoadUtils.handleImageLoad(this);" onerror="LoadUtils.handleImageLoadError(this);" alt="renault icon" title="renault icon" data-alternate="https://d1rs1tqcxzgl1z.cloudfront.net/iconduck/image/upload/w_614,h_614,c_fit/f_png/e_colorize:0,co_rgb:000000/w_644,h_644,c_lpad/e_trim:1/w_512,h_512,c_fit/s3.prod/assets.00/asstfbapc1bu" width="5%">ULT</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link amarillo" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link amarillo" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-warning" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
         <div class="row">
-            <aside class="col-md-2 col-sm-1 d-none d-sm-block mderecha"></aside>
-            <main class="col-12 col-sm-11 col-md-10 container-fluid">
-                <nav class=" row"></nav>
+            <aside class="col-md-2 d-none d-lg-block mderecha">
+                <span class="textoRenault">
+                    
+                    <br>    
+                    <p>Renault es un fabricante francés de automóviles, vehículos comerciales y automóviles dedicados a la competición del mundo del motor (Rally y Fórmula 1, entre otras). Fue fundada el 25 de febrero de 1899 por Louis Renault, Marcel Renault y Fernand Renault. Su sede central se encuentra en Boulogne-Billancourt (Francia).</p>
+                    <br>
+                    <p>Entre los años 1901 y 1910 Renault adoptó la producción en serie de automóviles. Más concretamente en el año 1905 al recibir un pedido de 250 taxis. Es entonces cuando Renault amplió sus instalaciones para poder abordar el trabajo que requiere una línea de producción de vehículos en serie.</p>
+                    <br>
+                    <p>Al igual que otros muchos fabricantes de automóviles de la época, no fueron ajenos a la primera y segunda guerra mundial. En el año 1911 Renault inauguró una serie de talleres destinados a la fabricación de vehículos comerciales para el ejército francés. Una década después de su fundación, la empresa ya estaba totalmente consolidada. Entre los años 1920 y 1935 la producción llegó a alcanzar volúmenes muy importantes, superando la cifra de las 58.000 unidades</p>
+                    <br>
+                    <p>Durante los años de la segunda guerra mundial, las fábricas de Renault son entregadas por los alemanes a sus respectivos dueños con la condición de que fabriquen para ellos. Muchas de las factorías de Renault se vieron afectadas por los bombardeos de la aviación aliada por aquel entonces.</p>
+
+                </span>
+            </aside>
+            <main class="col-12 col-sm-10 container-fluid">
+                <nav class="row">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active img1"></div>
+                          <div class="carousel-item img2"></div>
+                          <div class="carousel-item img3"></div>
+                        </div>
+                      </div>
+                </nav>
                <div class="row articulos">
-                 <article class="col-md-6 col-12"></article>
-                 <article class="col-md-6 col-12"></article>
+                 <article class="col-md-6 col-12">
+                    <div class="jumbotron">
+                        <h1 class="display-4">Compra coches</h1>
+                        <p class="lead">LOS COCHES MAS BARATOS DEL MERCADO AHORA EN TU TEJADO!!!!!!</p>
+                        <hr class="my-4">
+                        <p>Se acabo ir al taller descomprometete con el ayer</p>
+                        <a class="btn btn-primary btn-lg botones" href="#" role="button">Comprar</a>
+                      </div>
+                 </article>
+                 <article class="col-md-6 col-12">
+                    <div class="jumbotron">
+                        <h1 class="display-4">Invierte en nosotros</h1>
+                        <p class="lead">¡¡¡SACA UN 100% DE RENTABILIDAD ANUAL CON NUESTRO PLAN!!!</p>
+                        <hr class="my-4">
+                        <p>Seguramente nunca has pensado en invertir, sigue así</p>
+                        <a class="btn btn-primary btn-lg botones" href="#" role="button">No clickes</a>
+                      </div>
+                 </article>
                </div>
                 <div class="row sections">
-                    <section class="col-6 col-sm-4 col-md-2"></section>
-                    <section class="col-6 col-sm-4 col-md-2"></section>
-                    <section class="col-6 col-sm-4"></section>
-                    <section class="col-6 col-sm-4 col-md-2"></section>
-                    <section class="col-6 col-sm-4 col-md-2"></section>
-                    <section class="col-6 col-sm-4 col-md-2"></section>
-                    <section class="col-6 col-sm-4 col-md-2"></section>
-                    <section class="col-6 col-sm-4"></section>
-                    <section class="col-6 col-sm-4 col-md-2"></section>
-                    <section class="col-6 col-sm-4 col-md-2"></section>
+                    <section class="col-6 col-sm-4 col-md-2">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-IbCSBw8zRZnx0aKURQMTMsBSSv6EFEWCdQ&usqp=CAU" height="100vh" class="card-img-top" alt="coche">
+                          
+                            <div class="card-body">
+                              <h5 class="card-title">Confort</h5>
+                              <p class="card-text d-sm-none d-xl-block">Sientete en tu coche como en casa, así es duerme en tu coche porque sale caro una casa.</p>
+                              <a href="#" class="btn btn-primary botones">Mirar</a>
+                            </div>
+                          </div>
+                          
+                    </section>
+                    <section class="col-6 col-sm-4 col-md-2">
+                        <div class="card">
+                            <img src="https://s1.eestatic.com/2023/05/10/motor/762684273_233046238_1706x960.jpg" height="100vh" class="card-img-top" alt="Coche">
+                          
+                            <div class="card-body">
+                              <h5 class="card-title">DELETE</h5>
+                              <p class="card-text d-sm-none d-xl-block">Un coche pequeño electrico, no tienes suficiente con que va lento que aparte no hace ratatata.</p>
+                              <a href="#" class="btn btn-primary botones">DELETE</a>
+                            </div>
+                          </div>
+                          
+                    </section>
+                    <section class="col-6 col-sm-4">
+                        <div class="card">
+                            <img src="https://a.ccdn.es/cnet/contents/media/renault/alpine/419522.jpg/900x505cut/" height="100vh" class="card-img-top" alt="Coche">
+                          
+                            <div class="card-body">
+                              <h5 class="card-title">Visitanos</h5>
+                              <p class="card-text d-sm-none d-xl-block">Nuestro mejor circuito, ven a vernos a cheste y destroza el parachoques de nuestros coches.</p>
+                              <a href="#" class="btn btn-primary botones">Reservar</a>
+                            </div>
+                          </div>
+                          
+                    </section>
+                    <section class="col-6 col-sm-4 col-md-2">
+                        <div class="card">
+                            <img src="https://img.remediosdigitales.com/b8109e/renault-sport-spider/840_560.jpg" height="100vh" class="card-img-top" alt="Coche">
+                          
+                            <div class="card-body">
+                              <h5 class="card-title">Amarillo</h5>
+                              <p class="card-text d-sm-none d-xl-block">Viejo, pero tremendo BMW killer, lloraran cuando los pases a 350km/h y solo escuchen el ratata .</p>
+                              <a href="#" class="btn btn-primary botones">Comprar</a>
+                            </div>
+                          </div>
+                          
+                    </section>
+                    <section class="col-6 col-sm-4 col-md-2">
+                        <div class="card">
+                            <img src="https://phantom-marca.unidadeditorial.es/7f7c77901380a631f54b2c5077cab1df/crop/0x144/2046x1292/resize/414/f/jpg/assets/multimedia/imagenes/2020/10/03/16017276595238.jpg" height="100vh" class="card-img-top" alt="Coche">
+                          
+                            <div class="card-body">
+                              <h5 class="card-title">BOOOFF</h5>
+                              <p class="card-text d-sm-none d-xl-block">Que locura lo de este coche, pilla 0 a 100km/h en solo 3,2s es un avión.</p>
+                              <a href="#" class="btn btn-primary botones">PILLALO</a>
+                            </div>
+                          </div>
+                          
+                    </section>
+                    <section class="col-6 col-sm-4 col-md-2">
+                        <div class="card">
+                            <img src="https://noticias.coches.com/wp-content/uploads/2010/07/renault-dezir-04.jpg" height="100vh" class="card-img-top" alt="Coche">
+                          
+                            <div class="card-body">
+                                <h5 class="card-title">Visitanos</h5>
+                                <p class="card-text d-sm-none d-xl-block">Nuestro mejor circuito, ven a vernos a cheste y destroza el parachoques de nuestros coches.</p>
+                                <a href="#" class="btn btn-primary botones">Reservar</a>
+                          </div>
+                          
+                    </section>
+                    <section class="col-6 col-sm-4 col-md-2">
+                        <div class="card">
+                            <img src="https://img.remediosdigitales.com/3568ca/renault-trezor_/1366_2000.jpg" height="100vh" class="card-img-top" alt="Coche">
+                          
+                            <div class="card-body">
+                                <h5 class="card-title">Visitanos</h5>
+                                <p class="card-text d-sm-none d-xl-block">Nuestro mejor circuito, ven a vernos a cheste y destroza el parachoques de nuestros coches.</p>
+                                <a href="#" class="btn btn-primary botones">Reservar</a>
+                            </div>
+                          </div>
+                          
+                    </section>
+                    <section class="col-6 col-sm-4">
+                        <div class="card">
+                            <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2016/10/20161001-RENAULT-TREZOR-CONCEPT-01.jpg" height="100vh" class="card-img-top" alt="Coche">
+                          
+                            <div class="card-body">
+                                <h5 class="card-title">Visitanos</h5>
+                                <p class="card-text d-sm-none d-xl-block">Nuestro mejor circuito, ven a vernos a cheste y destroza el parachoques de nuestros coches.</p>
+                                <a href="#" class="btn btn-primary botones">Reservar</a>
+                            </div>
+                          </div>
+                          
+                    </section>
+                    <section class="col-6 col-sm-4 col-md-2">
+                        <div class="card">
+                            <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2020/10/20201910-RENAULT-Y-ALPINE-04-s%C3%AD-750x518.jpg" height="100vh" class="card-img-top" alt="Coche">
+                          
+                            <div class="card-body">
+                                <h5 class="card-title">Visitanos</h5>
+                                <p class="card-text d-sm-none d-xl-block">Nuestro mejor circuito, ven a vernos a cheste y destroza el parachoques de nuestros coches.</p>
+                                <a href="#" class="btn btn-primary botones">Reservar</a>
+                            </div>
+                          </div>
+                          
+                    </section>
+                    <section class="col-6 col-sm-4 col-md-2">
+                        <div class="card">
+                            <img src="https://www.autobild.es/sites/navi.axelspringer.es/public/media/image/2012/11/299017-alpine-a110.jpg" height="100vh" class="card-img-top" alt="...">
+                          
+                            <div class="card-body">
+                                <h5 class="card-title">Visitanos</h5>
+                                <p class="card-text d-sm-none d-xl-block">Nuestro mejor circuito, ven a vernos a cheste y destroza el parachoques de nuestros coches.</p>
+                                <a href="#" class="btn btn-primary botones">Reservar</a>
+                            </div>
+                          </div>
+                          
+                    </section>
                 </div>
             </main>
         </div>
-        <footer class="row"></footer>
+        <footer class="row">
+            <div class="container">
+                <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+                  <div class="col mb-3">
+                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                    <p class="text-muted">Jose Luis Tarraga© 2022</p>
+                  </div>
+              
+                  <div class="col mb-3">
+              
+                  </div>
+              
+                  <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                  </div>
+              
+                  <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                  </div>
+              
+                  <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </div>
     
 </body>
