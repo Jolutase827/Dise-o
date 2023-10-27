@@ -37,6 +37,13 @@
     text-decoration: none;
     
 }
+.inicio:hover{
+    background-color: rgb(44, 44, 44);
+    transition: 0.4s;
+}
 header{
     background-color: white;
+}
+.size{
+    font-size: 1vw;
 }
