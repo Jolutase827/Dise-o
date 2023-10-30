@@ -1,5 +1,5 @@
 .sombra{
-    filter: drop-shadow(4px 7px 10px rgb(163, 163, 163));
+    filter: drop-shadow(0.3vw 0.1vw 0.4vw rgb(163, 163, 163));
 }
 .h1size{
     font-size: 2.5vw;
@@ -18,8 +18,8 @@
     color: rgb(53, 53, 53);
     background-color: rgb(161, 161, 161);
     text-decoration: none;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
     padding-left: 1vw;
 }
 .botones>a:not(.inicio):hover{
@@ -28,14 +28,20 @@
 }
 .inicio{
     background-color: black;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    border-radius: 10px;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    border-radius: 0.7vw;
     width: 7vw;
     text-align: center;
     color: white;
-    text-decoration: none;
-    
+    text-decoration: none;   
+}
+.btn-dark{
+    background-color: black;
+    border: black;
+    font-size: 1vw;
+    width: fit-content;
+    height: max-content;
 }
 .inicio:hover{
     background-color: rgb(44, 44, 44);
