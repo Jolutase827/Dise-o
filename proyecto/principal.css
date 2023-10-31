@@ -13,6 +13,7 @@
     text-align: center;
     color: white;
     text-decoration: none;   
+    border: 0;
 }
 .informacionC{
     background-color: black;
@@ -67,6 +68,7 @@
     padding-top: 0.6vw;
     padding-bottom: 0.6vw;
     border-radius: 0.7vw;
+    border: 0;
     width: 7vw;
     text-align: center;
     color: white;
@@ -92,7 +94,7 @@ header{
 
 .imagenHombre{
     background-image: url('https://oleainfluenseller.com/cdn/shop/products/product-image-1423389228.jpg');
-    background-position: center;
+    background-position: top;
 }
 .imagenMujer{
     background-image: url('https://hips.hearstapps.com/hmg-prod/images/gymsharkwomen-121234369-2677266559269339-5036545344300294704-n-1605517562.jpg');
