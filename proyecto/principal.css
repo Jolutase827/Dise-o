@@ -88,6 +88,9 @@ header{
     top: 0;
     z-index: 1;
 }
+i{
+    color: black;
+}
 .hueco{
     height: 6vw;
 }
