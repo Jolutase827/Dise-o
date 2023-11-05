@@ -111,7 +111,9 @@ i{
 .hueco{
     height: 6vw;
 }
-
+.rojo:hover, .rojo:hover>i{
+    color: red;
+}
 .imagenHombre{
     background-image: url('https://oleainfluenseller.com/cdn/shop/products/product-image-1423389228.jpg');
     background-position: top;
