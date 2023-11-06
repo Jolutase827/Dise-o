@@ -73,4 +73,15 @@ footer{
     top: 50%;
     transform: translateY(-50%);
     color: #888;
-  }
+}
+.contrenedorErroresContraseña{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.red{
+    color: red;
+}
+.green{
+    color: rgb(0, 223, 0);
+}
