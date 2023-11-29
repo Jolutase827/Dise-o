@@ -1,0 +1,56 @@
+.contenedor{
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(6,50px);
+}
+.contenedor>div{
+    background-color: rgb(104, 104, 104);
+    border:  black 4px inset;
+    
+}
+.bloque1{
+    grid-row: 1/8;
+}
+.bloque8{
+    grid-row: 1/8;
+    grid-column: 3;
+}
+button{
+    width: 50px;
+    height: 40px;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+.boton1{
+    background-color: red;
+}
+.boton2{
+    background-color: blue;
+}
+.boton3{
+    background-color: green;
+}
+.boton4{
+    background-color: yellow;
+}
+.boton1:active~div>.bloque1,
+.boton1:active~div>.bloque8,
+.boton1:active~div>.bloque4,
+.boton1:active~div>.bloque5{
+    background-color: red;
+}
+.boton2:active~div>div:not(.bloque4):not(.bloque5){
+    background-color: blue;
+}
+.boton3:active~div>.bloque1,
+.boton3:active~div>.bloque6,
+.boton3:active~div>.bloque7{
+    background-color: green;
+}
+.boton4:active~div>div:nth-child(3n+2),
+.boton4:active~div>.bloque1{
+    background-color: yellow;
+}
+
+

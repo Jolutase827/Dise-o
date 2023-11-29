@@ -1,0 +1,94 @@
+body{
+    height: 98vh;
+    color: white;
+    display: flex;
+    align-content: end;
+    flex-direction: column;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black  ;
+    font-size: 20px;
+}
+h3{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+div[class]{
+    animation-name: movimiento;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 7s;
+}
+
+.linear{
+    animation-timing-function: linear;
+}
+.ease{
+    animation-timing-function: ease;
+}
+.ease-in{
+    animation-timing-function: ease-in;
+}
+.ease-in-out{
+    animation-timing-function: ease-in-out;
+}
+.ease-out{
+    animation-timing-function: ease-out;
+}
+@keyframes movimiento{
+    12.5%{
+        transform: skew(.312rad) translateX(10vw);
+    }
+    25%{
+        transform: skew(0) translateX(20vw);
+    }
+    37.5%{
+        transform: translateX(35vw);
+    }
+    50%{
+        transform: translateX(50vw);
+    }
+    75%{
+        transform: translateX(65vw);
+    }
+    87.5%{
+        transform: skew(-0.06turn) translateX(80vw);
+    }
+    100%{
+        transform: skew(0) translateX(90vw);
+    }
+}
+
+.linear>h3{
+    background-color: rgb(52, 123, 255);
+}
+.ease>h3{
+    background-color: rgb(253, 41, 58);
+}
+.ease-in>h3{
+    background-color: rgb(151, 151, 151);
+}
+.ease-out>h3{
+    background-color: rgb(253, 168, 41);
+}
+.ease-in-out>h3{
+    background-color: rgb(57, 92, 248);
+}
+div{
+    width: 200px;
+    margin-bottom: 20px;
+}
+div>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+div>div>div{
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}

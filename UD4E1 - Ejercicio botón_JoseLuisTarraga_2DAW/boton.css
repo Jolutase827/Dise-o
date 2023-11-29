@@ -1,0 +1,28 @@
+button{
+    background-color: white;
+    box-shadow: rgb(158, 158, 158) 1px 3px 5px 2px;
+    border: 0;
+    width: 130px;
+    height: 35px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button:hover{
+    background-color: rgb(0, 255, 170);
+    box-shadow: #8dfdd8 1px 5px 10px 3px;
+    transition: 0.5s;
+}
+button:active{
+    box-shadow: none;
+    background-color: red;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    font-size: 15px;
+}

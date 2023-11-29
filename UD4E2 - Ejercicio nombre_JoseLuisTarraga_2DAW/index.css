@@ -1,0 +1,23 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+div{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    overflow: hidden;
+}
+h1{
+    color: red;
+    transform: rotate(270deg) translateY(170px);
+    font-size: 90px;
+    transition: 1.5s;
+}
+h1:hover{
+    transform: rotate(320deg) translateY(0px);
+    transition: 1.5s;
+}
