@@ -70,8 +70,28 @@ main>h1{
     animation-duration: 4s;
     color: white;
 }
+.letra-responsive>div>p{
+    font-size: 1.2vw;
+    transition: 0.4s;
+}
+.letra-responsive>div>p:hover{
+    font-size: 1.4vw;
+    transition: 0.4s;
+}
+.letra-responsive>div>h3{
+    font-size: 2vw;
+    transition: 0.4s;
+}
+.letra-responsive>div:hover>h3{
+    font-size: 2.3vw;
+    transition: 0.4s;
+}
+.letra-responsive>div>h3:hover{
+    color: black;
+    transition: 0.4s;
+}
 .contenedor-perfil>div>p{
-    font-size: 12px;
+    font-size: 0.85vw;
     transition: 0.4s;
 }
 .contenedor-perfil>div>p:nth-child(1):hover{
