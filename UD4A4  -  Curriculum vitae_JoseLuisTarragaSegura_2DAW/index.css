@@ -5,31 +5,329 @@ main
 {
     background-color: white;
     width: 100%;
-    height: 100vh;
     box-shadow: black 0px 0px 20px 5px;
 }
 nav{
     width: 100%;
     height: 120px;
-    background-color: rgba(238, 238, 238,0.3);
+    background-color: rgb(179, 179, 179);
     position: sticky;
     top: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    z-index: 1;
 }
 nav>div>a{
     color: rgb(68, 68, 68);
     font-weight: 500;
     text-decoration: none;
     transition: 0.5s;
+    font-family: 'TESLA', sans-serif;  
 }
 nav>div>a:hover{
-    color: rgb(136, 136, 136);
+    color: rgb(255, 255, 255);
     transform: scale(50px);
     font-weight: 600;
     text-decoration: none;
     transition: 0.5s;
 }
+nav>h1{
+    font-family: 'TESLA', sans-serif;  
+    animation-name: space-letters;
+    animation-duration: 4s;
+}
+
+
+.imagen-perfil-elon{
+    animation-name: darla-vuelta-foto-perfil;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    transition: 1s;
+}
+.imagen-perfil-elon:hover{
+    transition: 1s;
+    transform: scale(150%);
+}
+
 main>h1{
-    font-family: 'TESLA', sans-serif;                                             
+    font-family: 'Jost', sans-serif;
+    font-family: 'Oswald', sans-serif;
+                                               
+}
+.contenedor-perfil{
+    background-color: #ff0000;
+    height: 300px;
+    animation-name: salida-izquierda;
+    animation-duration: 4s;
+    color: white;
+    
+}
+.contenedor-formacion{
+    background-color: #ff0000;
+    height: 300px;
+    animation-name: salida-derecha;
+    animation-duration: 4s;
+    color: white;
+}
+.contenedor-perfil>div>p{
+    font-size: 12px;
+    transition: 0.4s;
+}
+.contenedor-perfil>div>p:nth-child(1):hover{
+    transition: 0.7s;
+    font-weight: 800;
+}
+.contenedor-perfil>div>p:nth-child(2):hover{
+    transition: 0.7s;
+    letter-spacing: 2px;
+}
+.remolque-izquierda{
+    background-color: black;
+    height: 40px;
+    animation-name: salida-izquierda-palo;
+    animation-duration: 4s;
+    opacity: 0;
+}
+.coche-rotacion-izquierda{
+    transform-origin: right bottom;
+    transform: rotateY(180deg) translateX(195px);
+    animation-name: salida-izquierda-coche;
+    animation-duration: 4s;
+    opacity: 0;
+}
+.remolque-derecha{
+    background-color: black;
+    height: 40px;
+    animation-name: salida-derecha-palo-coche;
+    animation-duration: 4s;
+    opacity: 0;
+}
+.letras-tesla{
+    font-family: 'TESLA', sans-serif;  
+}
+.coche-rotacion-derecha{
+    transform-origin: right bottom;
+    animation-name: salida-derecha-palo-coche;
+    animation-duration: 4s;
+    opacity: 0;
+}
+.subrayado {
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0);
+    transition: 0.4s;
+    text-decoration-thickness: 2px;
+}
+.titulo-curriculum{
+    transition: 1s;
+}
+.titulo-curriculum:hover{
+    transition: 8s;
+    transform: rotate(18000deg);
+}
+.subrayado:hover {
+    transition: 1s;
+    text-decoration-color: rgba(255, 255, 255, 1);
+   
+}
+.vuelta{
+    transition: 0.7s;
+}
+.vuelta:hover{
+    transform: rotate(360deg);
+    transition: 0.7s;
+}
+.formacion-titulo{
+    animation-duration: 10s;
+    animation-name: arcoiris;
+    animation-delay: 4s;
+}
+
+#empresas>div>img{
+    transition: 1s;
+}
+#empresas>div>img:nth-child(1){
+    animation-name: aplitud;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-timing-function: ease;
+}
+#empresas>div>img:nth-child(2){
+    animation-name: aplitud;
+    animation-duration:  1s;
+    animation-delay: 4.5s;
+    animation-timing-function: ease;
+}
+#empresas>div>img:nth-child(3){
+    animation-name: aplitud;
+    animation-duration:  1s;
+    animation-delay: 5s;
+    animation-timing-function: ease;
+}
+
+#empresas>div>img:nth-child(1):hover{
+    transition: 1s;
+    transform: rotateY(180deg);
+}
+#empresas>div>img:nth-child(2):hover{
+    transition: 1s;
+    transform: rotateX(180deg);
+}
+#empresas>div>img:nth-child(3):hover{
+    transition: 1s;
+    transform: skew(20deg);
+}
+
+.rudeas{
+    background-color: white;
+    height: 120px;
+}
+
+footer{
+    background-color: white;
+}
+
+@keyframes aplitud {
+    0%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(125%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+
+@keyframes arcoiris{
+    0%{
+        color: white;
+    }
+    12.5%{
+        color: aquamarine;
+    }
+    25%{
+        color: blueviolet;
+    }
+    37.5%{
+        color: blue;
+    }
+    50%{
+        color: chartreuse;
+    }
+    62.5%{
+        color:darkgoldenrod;
+    }
+    75%{
+        color: magenta;
+    }
+    87.5%{
+        color: mediumvioletred;
+    }
+    100%{
+        color: white;
+    }
+}
+
+
+.tlogo{
+    animation-name: scale-logo;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes space-letters{
+    0%{
+        letter-spacing: 40px;
+    }
+    50%{
+        transform: skew(20deg);
+    }
+    75%{
+        transform: skew(-20deg);
+    }
+    100%{
+        letter-spacing: normal;
+    }
+}
+@keyframes darla-vuelta-foto-perfil{
+    0%{
+        transform: rotateY(0deg) ;
+    }
+    50%{
+        transform: rotateY(180deg) ;
+    }
+    100%{
+        transform: rotateY(0deg) ;
+    }
+}
+
+@keyframes scale-logo {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(120px);
+    }
+}
+
+@keyframes salida-izquierda {
+    from{
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes salida-derecha {
+    from{
+        opacity: 0;
+        transform: translateX(400px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes salida-izquierda-palo {
+    from{
+        opacity: 1;
+        transform: translateX(-400px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+@keyframes salida-derecha-palo-coche {
+    from{
+        opacity: 1;
+        transform: translateX(400px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+@keyframes salida-izquierda-coche{
+    from{
+        opacity: 1;
+        transform: rotateY(180deg) translateX(595px);
+        transform-origin: right bottom;
+    }
+    to{
+        opacity: 0;
+        transform: rotateY(180deg) translateX(195px);
+        transform-origin: right bottom;
+    }
+    
 }

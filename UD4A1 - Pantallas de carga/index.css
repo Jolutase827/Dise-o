@@ -75,6 +75,9 @@ main>div{
 .cuadrados{
     width: 400px;
 }
+footer{
+    background-color: white !important;
+}
 .cuadrados>div{
     width: 100px;
     height: 100px;
