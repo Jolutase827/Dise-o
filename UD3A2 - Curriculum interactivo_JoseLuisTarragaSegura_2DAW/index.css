@@ -71,19 +71,19 @@ main>h1{
     color: white;
 }
 .letra-responsive>div>p{
-    font-size: 1.2vw;
+    font-size: 0.9vw;
     transition: 0.4s;
 }
 .letra-responsive>div>p:hover{
-    font-size: 1.4vw;
+    font-size: 1vw;
     transition: 0.4s;
 }
 .letra-responsive>div>h3{
-    font-size: 2vw;
+    font-size: 1.8vw;
     transition: 0.4s;
 }
 .letra-responsive>div:hover>h3{
-    font-size: 2.3vw;
+    font-size: 2vw;
     transition: 0.4s;
 }
 .letra-responsive>div>h3:hover{
@@ -91,7 +91,7 @@ main>h1{
     transition: 0.4s;
 }
 .contenedor-perfil>div>p{
-    font-size: 0.85vw;
+    font-size: 0.7vw;
     transition: 0.4s;
 }
 .contenedor-perfil>div>p:nth-child(1):hover{
