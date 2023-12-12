@@ -71,11 +71,12 @@ main>h1{
     color: white;
 }
 .letra-responsive>div>p{
-    font-size: 0.9vw;
+    font-size:12px;
     transition: 0.4s;
+
 }
 .letra-responsive>div>p:hover{
-    font-size: 1vw;
+    font-size: 14px;
     transition: 0.4s;
 }
 .letra-responsive>div>h3{
@@ -91,7 +92,7 @@ main>h1{
     transition: 0.4s;
 }
 .contenedor-perfil>div>p{
-    font-size: 0.7vw;
+    font-size: 12px;
     transition: 0.4s;
 }
 .contenedor-perfil>div>p:nth-child(1):hover{
@@ -111,7 +112,7 @@ main>h1{
 }
 .coche-rotacion-izquierda{
     transform-origin: right bottom;
-    transform: rotateY(180deg) translateX(195px);
+    transform: rotateY(180deg);
     animation-name: salida-izquierda-coche;
     animation-duration: 4s;
     opacity: 0;
@@ -341,12 +342,12 @@ footer{
 @keyframes salida-izquierda-coche{
     from{
         opacity: 1;
-        transform: rotateY(180deg) translateX(595px);
+        transform: rotateY(180deg) translateX(650px);
         transform-origin: right bottom;
     }
     to{
         opacity: 0;
-        transform: rotateY(180deg) translateX(195px);
+        transform: rotateY(180deg) translateX(250px);
         transform-origin: right bottom;
     }
     
