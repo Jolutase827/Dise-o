@@ -52,11 +52,39 @@ main>main{
 main>main>div:nth-child(1){
     background-image: url('https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2015/04/408275-2-fast-2-furious-coche.jpg');
     background-position: center;
-    background-position: center;
-    background-size: cover;
+    background-size:cover;
     height: 800px;
 }
+.header-fake{
+    background-image:  linear-gradient(to left, rgb(255, 136, 0) , rgb(255, 230, 0) );;
+    color: white;
+    transform: skew(-20deg);
+    box-shadow: rgb(255, 208, 0) 0px 0px 10px 10px;
+    font-family: 'Permanent Marker', cursive;
+}
 
+section:nth-child(1)>div{
+    background-image:  linear-gradient(to left, rgb(4, 0, 252) , rgb(122, 122, 122) );
+}
+section:nth-child(1)>div>h2{
+    color: white;
+    font-family: 'Russo One', sans-serif;
+}
+section:nth-child(1)>div>h4{
+    color: rgb(201, 201, 201);
+    text-shadow: 1px 1px 2px black;
+}
+section:nth-child(2)>div{
+    background-image:  linear-gradient(to right, rgb(0, 133, 11) 50%, rgb(2, 2, 2) );
+}
+section:nth-child(2)>div>h2{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+section:nth-child(2)>div>h4{
+    color: rgb(201, 201, 201);
+    text-shadow: 1px 1px 2px black;
+}
 
 
 body>footer{
