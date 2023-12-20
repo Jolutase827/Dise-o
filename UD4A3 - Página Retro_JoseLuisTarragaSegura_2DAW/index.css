@@ -46,14 +46,16 @@ nav{
 
 main>main{
     height: 80%;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     border:solid 3px black;
 }
 main>main>div:nth-child(1){
     background-image: url('https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2015/04/408275-2-fast-2-furious-coche.jpg');
     background-position: center;
-    background-size:cover;
-    height: 800px;
+    background-size: cover;
+    min-height: 800px;
+    background-attachment: scroll;
 }
 .header-fake{
     background-image:  linear-gradient(to left, rgb(255, 136, 0) , rgb(255, 230, 0) );;
@@ -61,6 +63,39 @@ main>main>div:nth-child(1){
     transform: skew(-20deg);
     box-shadow: rgb(255, 208, 0) 0px 0px 10px 10px;
     font-family: 'Permanent Marker', cursive;
+    transition: 1.5s;
+    cursor: pointer;
+}
+.header-fake:active{
+    transition: 1.5s;
+    background-image:  linear-gradient(to right, rgb(255, 255, 255) , rgb(0, 0, 0) );
+    color: black;
+    transform: skew(20deg);
+    box-shadow:  rgb(95, 95, 95) 0px 0px 10px 10px;
+    font-family: 'Permanent Marker', cursive;
+    cursor: progress;
+}
+article{
+    position: relative;
+}
+
+section{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/240/785/small/checkered-flag-racing-logo-vecot-illustration-in-flat-design-vector.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translate(-95%);
+    transition: 0.5s;
+    cursor: e-resize;
+}
+section:active{
+    transition: 0.5s;
+    transform: translate(0%);
+    cursor:auto;
+}
+section:active~.video-youtube{
+    transition: 0.5s;
+    display: none !important;
 }
 
 section:nth-child(1)>div{
@@ -85,11 +120,130 @@ section:nth-child(2)>div>h4{
     color: rgb(201, 201, 201);
     text-shadow: 1px 1px 2px black;
 }
+section:nth-child(3)>div{
+    background-image:  linear-gradient(to right, rgb(252, 164, 0) 50%, rgb(0, 192, 26));
+}
+section:nth-child(3)>div>h2{
+    color: white;
+    font-family: 'Russo One', sans-serif;
+}
+section:nth-child(3)>div>h4{
+    color: rgb(201, 201, 201);
+    text-shadow: 1px 1px 2px black;
+}
+section>img{
+    object-fit: contain;
+}
+.video-youtube{
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    transition: 0.5s;
+}
+aside>div:nth-child(1){
+    position: relative;
+    cursor: grab;
+}
+aside>div:nth-child(1):active{
+    height: 35%;
+    background-image: url('https://phantom-marca.unidadeditorial.es/070eba9b285b4bc2e28549027de7c11e/crop/306x23/1910x922/resize/414/f/jpg/assets/multimedia/imagenes/2021/01/12/16104693006222.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    cursor:help;
+}
+aside>div:nth-child(1):active>img,aside>div:nth-child(1):active>div{
+    display: none !important;
+}
+aside>div:nth-child(1):active>h6::before{
+    content: 'Escuchar "Tenía tanto que darte"';
+}
+aside>div:nth-child(1)>img{
+    filter: saturate(200%);
+    animation-name: fotoAnuncio;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+aside>div:nth-child(1)>button{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 8px;
+}
+aside>div:nth-child(1)>h6{
+    position: absolute;
+    bottom: 5%;
+    left: 4%;
+    font-family: 'Russo One', sans-serif;
+}
+aside>div:nth-child(1)>h6::before{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    content: 'Descubre lo mejor a parte de los coches!';
+}
 
+.fueguitos{
+    position: absolute;
+    bottom:0;
+    left: 2%;
+}
+
+aside>div:nth-child(2){
+    height: 35%;
+    background-color: rgb(119, 69, 23);
+    position:relative;
+}
+aside>div:nth-child(2)>img{
+    animation-name: ruleta;
+    animation-duration: 1s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
 
 body>footer{
     background-color: rgb(172, 172, 172);
     border: black 5px;
     border-style: inset;
     height: 10vh;
+}
+
+@keyframes ruleta {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fotoAnuncio {
+    0%{
+        
+    }
+    12.5%{
+        mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 80%);
+    }
+    25%{
+        mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 65%);
+    }
+    37.5%{
+        mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+    }
+    50%{
+        mask-image: radial-gradient(circle closest-side at 60% 20%, black 80%, rgba(0, 0, 0, 0.5) 50%);
+    }
+    62.5%{
+        mask-image: radial-gradient(circle  at 95% 40%, black 30%, rgba(0, 0, 0, 0.5) 50%);
+    }
+    75%{
+        mask-image: radial-gradient(circle  at 95% 40%, black 40%, rgba(0, 0, 0, 0.5) 50%);
+    }
+    87.5%{
+        mask-image: radial-gradient(circle  at 10% 90%, black 20%, rgba(0, 0, 0, 0.5) 50%);
+    }
+    94%{
+        mask-image: radial-gradient(circle  at 10% 90%, black 30%, rgba(0, 0, 0, 0.5) 50%);
+    }
+    100%{
+        mask-image: radial-gradient(circle  at 10% 90%, black 40%, rgba(0, 0, 0, 0.5) 50%);
+    }
 }
