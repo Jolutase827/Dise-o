@@ -1,0 +1,110 @@
+body>div:nth-child(1){
+    height: 100vh;
+    background-color: black;
+}
+body>div:nth-child(2){
+    height: 30vh;
+    visibility: hidden;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -4%;
+    left: 25%;
+    z-index: 3;
+    animation-name: desaparecer-circulo;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+}
+body{
+    overflow: hidden;
+}
+.n>div:nth-child(1){
+    width: 17.5%;
+    height: 100%;
+}
+.n>div:nth-child(1)>div{
+    width: 12.5%;
+    height: 100%;
+    background-color: rgb(197, 3, 3);
+}
+.n>div:nth-child(2){
+    width: 17.5%;
+    height: 100%;
+    transform: skewX(26deg);
+    z-index: 2;
+    background-color: red;
+    box-shadow: black 0px 0px 10px 3px;
+    animation-name: retroceder-medio;
+    animation-duration: 1.5s;
+    animation-delay: 2.3s;
+    animation-timing-function: ease;
+}
+.n>div:nth-child(2)>div{
+    width: 12.5%;
+    height: 100%;
+    background-color: red;
+    animation: palos-derecha-medio 1.3s ease 2.5s ;
+}
+.n>div:nth-child(3){
+    width: 17.5%;
+    height: 100%;
+    z-index: 1;
+    animation-name: retroceder-derecha;
+    animation-duration:  1.5s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+.n>div:nth-child(3)>div{
+    width: 12.5%;
+    height: 100%;
+    background-color: rgb(197, 3, 3);
+    animation: palos-derecha-medio 1.5s ease 1.2s ;
+}
+.n{
+    height: 50vh;
+    animation-name: agrandarN;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-timing-function: ease;
+}
+
+
+@keyframes retroceder-derecha{
+    to{
+        transform-origin: bottom ;
+        transform: scaleY(0) translateY(200px);
+    }
+}
+
+@keyframes retroceder-medio{
+    from{
+        transform-origin: top;
+        transform: scaleY(100%) skew(26deg) translateX(-112.5px);
+    }
+    to{
+        transform-origin: top;
+        transform: scaleY(0) translateX(-112.5px);
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+    }
+}
+@keyframes palos-derecha-medio{
+    to{
+        background-color: rgb(53, 1, 1);
+        transform: scaleX(3%);
+    }
+}
+
+@keyframes desaparecer-circulo{
+    from{
+        visibility: visible;
+    }
+    to{
+        visibility: visible;
+    }
+}
+@keyframes agrandarN{
+    to{
+        transform: scale(1000%) translateX(100px);
+    }
+}
