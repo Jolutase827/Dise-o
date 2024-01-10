@@ -1,110 +1,94 @@
-body>div:nth-child(1){
-    height: 100vh;
-    background-color: black;
-}
-body>div:nth-child(2){
-    height: 30vh;
-    visibility: hidden;
+body>main{
+    overflow: scroll;
+    overflow-x: hidden;
+    animation-name: salir-main;
+    animation-duration: 8s;
+    height: 100vh;   
     background-color: black;
     position: absolute;
-    border-radius: 50%;
-    bottom: -4%;
-    left: 25%;
-    z-index: 3;
-    animation-name: desaparecer-circulo;
-    animation-duration: 4s;
-    animation-timing-function: ease;
-}
-body{
-    overflow: hidden;
-}
-.n>div:nth-child(1){
-    width: 17.5%;
-    height: 100%;
-}
-.n>div:nth-child(1)>div{
-    width: 12.5%;
-    height: 100%;
-    background-color: rgb(197, 3, 3);
-}
-.n>div:nth-child(2){
-    width: 17.5%;
-    height: 100%;
-    transform: skewX(26deg);
-    z-index: 2;
-    background-color: red;
-    box-shadow: black 0px 0px 10px 3px;
-    animation-name: retroceder-medio;
-    animation-duration: 1.5s;
-    animation-delay: 2.3s;
-    animation-timing-function: ease;
-}
-.n>div:nth-child(2)>div{
-    width: 12.5%;
-    height: 100%;
-    background-color: red;
-    animation: palos-derecha-medio 1.3s ease 2.5s ;
-}
-.n>div:nth-child(3){
-    width: 17.5%;
-    height: 100%;
-    z-index: 1;
-    animation-name: retroceder-derecha;
-    animation-duration:  1.5s;
-    animation-delay: 1s;
-    animation-timing-function: ease;
-}
-.n>div:nth-child(3)>div{
-    width: 12.5%;
-    height: 100%;
-    background-color: rgb(197, 3, 3);
-    animation: palos-derecha-medio 1.5s ease 1.2s ;
-}
-.n{
-    height: 50vh;
-    animation-name: agrandarN;
-    animation-duration: 5s;
-    animation-delay: 4s;
-    animation-timing-function: ease;
+    top: 0;
 }
 
+aside>h4{
+    color: white;
+    animation-name: mover-h4;
+    animation-duration: 8s;
+    animation-delay: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+section:nth-child(3)>img{
+    border-radius: 0px    0px var(--bs-border-radius) var(--bs-border-radius);
+    height: 25vw;
+    transition: 0.5s;
+}
+section:nth-child(1)>img{
+    border-radius: var(--bs-border-radius) var(--bs-border-radius) 0px  0px  ;
+    height: 25vw;
+    transition: 0.5s;
+}
+section>img:hover{
+    transition: 0.5s;
+    filter: grayscale(80%);
+}
+section>h2{
+    font-family:  arial;
+    color: red;
+    letter-spacing: 3px;
+}
+section>p{
+    font-family: arial;
+    color: white;
+    font-size: small;
+}
+article{
+    background-color: gray;
+    border: solid 1px gray;
+    width: 49%;
+}
 
-@keyframes retroceder-derecha{
-    to{
-        transform-origin: bottom ;
-        transform: scaleY(0) translateY(200px);
+@keyframes salir-main{
+    0%{
+       opacity: 0;
+    }
+   
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
     }
 }
-
-@keyframes retroceder-medio{
+nav{
+    height: 10%;
+    background-color: gray;
+}
+nav>a{
+    color: white;
+    text-decoration: none;
+}
+nav>a:hover{
+    animation-name: enlaces;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes mover-h4 {
     from{
-        transform-origin: top;
-        transform: scaleY(100%) skew(26deg) translateX(-112.5px);
+        transform: translateX(-100%);
     }
     to{
-        transform-origin: top;
-        transform: scaleY(0) translateX(-112.5px);
-        background-color: rgba(0, 0, 0, 0);
-        box-shadow: none;
+        transform: translateX(300%);
     }
 }
-@keyframes palos-derecha-medio{
-    to{
-        background-color: rgb(53, 1, 1);
-        transform: scaleX(3%);
+@keyframes enlaces {
+    60%{
+        transform: scaleX(120%) scaleY(80%);
     }
-}
+    80%{
+        transform: scaleX(80%) scaleY(120%);
+    }
+    100%{
+        transform: scaleX(100%) scaleY(100%);
+    }
 
-@keyframes desaparecer-circulo{
-    from{
-        visibility: visible;
-    }
-    to{
-        visibility: visible;
-    }
-}
-@keyframes agrandarN{
-    to{
-        transform: scale(1000%) translateX(100px);
-    }
 }
