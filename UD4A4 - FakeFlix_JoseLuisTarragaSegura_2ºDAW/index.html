@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="animacionPrincipio.css">
+    <link rel="stylesheet" href="animacionPrincipio.css"> 
     <link rel="stylesheet" href="index.css">
     <title>JOSFLIX</title>
 </head>
@@ -59,26 +59,36 @@
     <div class="circle bg-black col-6">
     </div>    
     <main class="col-12">
-        <nav class="col-12 d-flex align-items-center ps-4">
-            <img src="Netflix.png" alt="Logo Netflix" class="col-1 me-2">
-            <a href="" class="me-2">Series</a>
-            <a href="" class="me-2">Peliculas</a>
-            <a href="" class="me-2">Novedades</a>
-            <a href="" class="">Mi Lista</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pe-2">
+            <div class="container-fluid">
+            <img src="Netflix.png" alt="Logo Netflix" class="col-md-1 col-2 me-2 logo-nav">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Series</a>
+                  <a class="nav-link" href="#">Peliculas</a>
+                  <a class="nav-link" href="#">Novedades</a>
+                  <a class="nav-link" href="#">Mi Lista</a>
+                </div>
+              </div>
+            </div>
         </nav>
         <header class="col-12 d-flex justify-content-center align-items-center flex-column">
-            <img src="Netflix.png" alt="Logo Netflix" class="col-3 mt-5">
-            <img src="Netflix.png" alt="Logo Netflix" class="col-3 ">
+            <img src="Netflix.png" alt="Logo Netflix" class="col-lg-3 mt-5 col-8">
+            <img src="NetflixArriba.png" alt="Texto netflix-1" class="col-lg-3 col-8">
+            <img src="NetflixAbajo.png" alt="Texto netflix-2" class="col-lg-1 col-5"></img>
         </header>
-        <main class="d-flex justify-content-between col-12 mb-2 mt-2">
-            <article class=" rounded d-flex justify-content-between flex-column">
+        <main class="d-flex justify-content-between flex-column flex-lg-row col-12 mb-2 mt-1">
+            <article class=" rounded d-flex justify-content-between flex-column col-12 col-lg-5">
                 <section class="mt-2 ms-2"><h2>Lupin</h2></section>
                 <section class="ms-2 me-2"><p>'Lupin' cuenta la historia de Assane Diop, un hombre marcado por el suicidio de su padre hace varios años tras ser condenado por un crimen que no cometió. 
                 <br>
                 La serie va encaminada a ver cómo intenta esclarecer lo sucedido y buscar venganza por la muerte de su progenitor cuando él apenas era un niño.</p></section>
                 <section class="col-12"><img src="https://i.blogs.es/97625b/cartel-lupin/1366_2000.jpeg" alt="Imagen Lupin" class="col-12" ></section>
             </article>
-            <article class=" rounded d-flex justify-content-between flex-column">
+            <article class=" rounded d-flex justify-content-between flex-column mt-3 mt-lg-0 col-12 col-lg-5">
                 <section><img src="https://i.blogs.es/dda1a8/berlin/840_560.jpeg" alt="Imagen serie Berlin" class="col-12" ></section>
                 <section><h2>Berlín</h2></section>
                 <section><p>La serie Berlín es una precuela de La casa de papel que explora los orígenes de este personaje. 
@@ -90,6 +100,16 @@
         <aside class="col-12 mt-4">
             <h4 class="col-4">Hola me estoy moviendo que loco </h4>
         </aside>
+        <footer class="py-3 my-4 ">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2">Darse de baja</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 ">Tarifas abusivas</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 ">Llorar</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 ">Dejar de compartir cuenta</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 ">Pasarse a HBOMax</a></li>
+            </ul>
+            <p class="text-center ">© 2022 Company, Inc</p>
+        </footer>
     </main>
     <audio src="Netflix New Logo Animation 2019.mp3" autoplay class="d-none"></audio>
 </body>

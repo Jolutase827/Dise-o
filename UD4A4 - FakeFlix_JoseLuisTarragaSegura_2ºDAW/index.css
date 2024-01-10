@@ -1,0 +1,187 @@
+body>main{
+    overflow: scroll;
+    overflow-x: hidden;
+    animation-name: salir-main;
+    animation-duration: 8s;
+    height: 100vh;   
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+footer>p{
+    color: white !important;
+}
+header>img:nth-child(1){
+    animation-name: animacion-img-1;
+    animation-duration: 3s;
+    animation-delay: 8s;
+    animation-timing-function: ease-out;
+}
+header>img:nth-child(2){
+    animation-name: animacion-img-2;
+    animation-duration: 3s;
+    animation-delay: 8s;
+    animation-timing-function: linear;
+}
+header>img:nth-child(3){
+    animation-name: animacion-img-2;
+    animation-duration: 3s;
+    animation-delay: 8s;
+    animation-timing-function: linear;
+}
+.logo-nav:hover{
+    animation-name: logo-nav;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+}
+header{
+    height: 400px;
+}
+aside>h4{
+    color: white;
+    animation-name: mover-h4;
+    animation-duration: 8s;
+    animation-delay: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+section:nth-child(3)>img{
+    border-radius: 0px    0px var(--bs-border-radius) var(--bs-border-radius);
+    height: 25vw;
+    transition: 0.5s;
+}
+section:nth-child(1)>img{
+    border-radius: var(--bs-border-radius) var(--bs-border-radius) 0px  0px  ;
+    height: 25vw;
+    transition: 0.5s;
+}
+section>img:hover{
+    transition: 0.5s;
+    filter: grayscale(80%);
+}
+section>h2{
+    font-family:  arial;
+    color: red;
+    letter-spacing: 3px;
+}
+section>p{
+    font-family: arial;
+    color: white;
+    font-size: small;
+}
+article{
+    background-color: rgb(92, 92, 92);
+    border: solid 1px gray;
+    width: 49%;
+}
+@keyframes logo-nav {
+    25%{
+        transform: translateX(-5%) translateY(-5%);
+    }
+    50%{
+        transform: translateX(5%) translateY(-5%);
+    }
+    75%{
+        transform: translateX(-5%) translateY(5%);
+    }
+    100%{
+        transform: translateX(5%) translateY(5%);
+    }
+}
+@keyframes salir-main{
+    0%{
+       opacity: 0;
+    }
+   
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+nav{
+    height: 10%;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: gray !important;
+}
+nav>div{
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+    background-color: gray !important;
+}
+a{
+    color: white !important;
+    text-decoration: none;
+}
+a:hover{
+    animation-name: enlaces;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes animacion-img-1 {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(100%);
+    }
+}
+@keyframes animacion-img-2 {
+    0%{
+        opacity: 0;
+        transform: scale(0) translateY(-600%);
+    }
+    20%{
+        opacity: 1;
+        transform: scale(100%) translateY(0%);
+    }
+    30%{
+        transform: translateY(10%);
+    }
+    60%{
+        transform: translateY(-10%);
+    }
+    70%{
+        transform: translateY(0);
+    }
+}
+@keyframes animacion-img-3 {
+    0%{
+        opacity: 0;
+        transform: scale(0) translateY(-300%);
+    }
+    40%{
+        opacity: 1;
+        transform: scale(100%) translateY(100%);
+    }
+    60%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes mover-h4 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(300%);
+    }
+}
+@keyframes enlaces {
+    60%{
+        transform: scaleX(120%) scaleY(80%);
+    }
+    80%{
+        transform: scaleX(80%) scaleY(120%);
+    }
+    100%{
+        transform: scaleX(100%) scaleY(100%);
+    }
+
+}
