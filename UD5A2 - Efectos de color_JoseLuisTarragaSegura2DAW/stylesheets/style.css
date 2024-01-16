@@ -1,0 +1,57 @@
+main > div > div {
+  width: 50%;
+  height: 10vw;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+main > div {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > div:nth-child(1) > div:nth-child(2) {
+  background-color: red;
+}
+
+main > div:nth-child(1) > div:nth-child(3) {
+  background-color: aqua;
+}
+
+main > div:nth-child(2) > div:nth-child(2) {
+  background-color: purple;
+}
+
+main > div:nth-child(2) > div:nth-child(3) {
+  background-color: purple;
+}
+
+main > div:nth-child(3) > div:nth-child(2) {
+  background-color: red;
+}
+
+main > div:nth-child(3) > div:nth-child(3) {
+  background-color: yellow;
+}
+
+main > div:nth-child(3) > div:nth-child(4) {
+  background-color: #ff8000;
+}
+
+main > div:nth-child(4) > div:nth-child(2) {
+  background-color: blue;
+}
+
+main > div:nth-child(4) > div:nth-child(3) {
+  background-color: gray;
+}
+
+/*# sourceMappingURL=style.css.map */
