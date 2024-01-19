@@ -1,0 +1,77 @@
+.contenedor {
+  border: solid 3px red;
+  margin: auto;
+  width: fit-content;
+}
+
+div.color-1 {
+  width: 50vw;
+  height: 100px;
+  border: solid 1px black;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+div.color-2 {
+  width: 50vw;
+  height: 100px;
+  border: solid 1px black;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+div.color-3 {
+  width: 50vw;
+  height: 100px;
+  border: solid 1px black;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+div.color-4 {
+  width: 50vw;
+  height: 100px;
+  border: solid 1px black;
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+div.color-5 {
+  width: 50vw;
+  height: 100px;
+  border: solid 1px black;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+div.color-6 {
+  width: 50vw;
+  height: 100px;
+  border: solid 1px black;
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+div.color-7 {
+  width: 50vw;
+  height: 100px;
+  border: solid 1px black;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+div.color-8 {
+  width: 50vw;
+  height: 100px;
+  border: solid 1px black;
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+div.color-9 {
+  width: 50vw;
+  height: 100px;
+  border: solid 1px black;
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+div.color-10 {
+  width: 50vw;
+  height: 100px;
+  border: solid 1px black;
+  background-color: rgb(255, 0, 0);
+}
+
+/*# sourceMappingURL=style.css.map */

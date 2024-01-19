@@ -1,0 +1,16 @@
+.contenedor{
+    border: solid 3px red;
+    margin: auto;
+    width: fit-content;
+}
+@mixin div-style ($opacity){
+    width: 50vw;
+    height: 100px;
+    border: solid 1px black;
+    background-color: rgba( 255, 0, 0, $opacity);
+}
+@for $i from 1 through 10{
+    div.color-#{$i}{
+        @include div-style($i/10)
+    }
+}
