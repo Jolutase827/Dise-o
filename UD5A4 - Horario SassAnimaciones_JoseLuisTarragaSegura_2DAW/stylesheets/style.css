@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -152,7 +153,7 @@ tr:not(:first-child) > th:not(:first-child) {
 
 .pokemon {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png");
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -198,18 +199,111 @@ tr:not(:first-child) > th:not(:first-child) {
   padding: 2px;
 }
 
-.hora-de-comer {
-  background-image: url("https://i.pinimg.com/550x/1e/03/d2/1e03d2970d5996a154c5750018f7fb0c.jpg");
+.ghost {
+  background-image: url("https://media.es.wired.com/photos/6467a3fda566376ee967bc69/16:9/w_2560%2Cc_limit/GhostOfTsushima.jpeg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hora-de-comer::before {
-  content: "";
+.ghost::before {
+  content: "Ghost of tsushima";
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
 }
 
+.stray {
+  background-image: url("https://cdn.cloudflare.steamstatic.com/steam/apps/1332010/capsule_616x353.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.stray::before {
+  content: "Stray";
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px;
+}
+
+.youtube {
+  background-image: url("https://www.youtube.com/img/desktop/yt_1200.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.youtube::before {
+  content: "Youtube";
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px;
+}
+
+.video {
+  background-image: url("https://grupoaudiovisual.com/wp-content/uploads/2020/06/VFX-FX-Visual-Effects-Edicion-y-montaje-grupoaudiovisual.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.video::before {
+  content: "Edición de video";
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px;
+}
+
+.patreon {
+  background-image: url("https://1000logos.net/wp-content/uploads/2021/05/Patreon-logo-2013.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.patreon::before {
+  content: "Patreon";
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px;
+}
+
+.instagram {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.instagram::before {
+  content: "Instagram";
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px;
+}
+
+.hora-de-comer {
+  background-color: rgb(253, 0, 42);
+}
+.hora-de-comer::before {
+  content: "😀HORA DE COMER😀";
+  color: black;
+}
+.hora-de-comer:hover {
+  animation-name: hora-de-comer;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+}
+
+@keyframes hora-de-comer {
+  0% {
+    background-color: rgb(253, 0, 42);
+  }
+  20% {
+    background-color: aqua;
+  }
+  40% {
+    background-color: greenyellow;
+  }
+  60% {
+    background-color: red;
+  }
+  80% {
+    background-color: orange;
+  }
+  100% {
+    background-color: rgb(253, 0, 42);
+  }
+}
 @keyframes titulos {
   0% {
     transform: scale(100%);

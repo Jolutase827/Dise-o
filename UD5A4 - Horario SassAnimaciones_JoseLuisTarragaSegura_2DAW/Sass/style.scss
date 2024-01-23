@@ -1,6 +1,6 @@
-@mixin assignaturas($imagen, $texto){
+@mixin assignaturas($imagen, $texto,$position){
     background-image: url($imagen);
-    background-position: top center;
+    background-position: $position;
     background-repeat: no-repeat;
     background-size: cover;
     &::before{
@@ -69,22 +69,70 @@ tr:not(:first-child)>th:not(:first-child){
     border: solid 1px black;
 }
 .godOf{
-    @include assignaturas('https://m.media-amazon.com/images/I/81eIPZLdAaL._AC_UF1000,1000_QL80_.jpg','God Of War 2')
+    @include assignaturas('https://m.media-amazon.com/images/I/81eIPZLdAaL._AC_UF1000,1000_QL80_.jpg','God Of War 2',top center)
 }
 .pokemon{
-    @include assignaturas('https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png','Pokemon')
+    @include assignaturas('https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png','Pokemon', center)
 }
 .assasins{
-    @include assignaturas('https://m.media-amazon.com/images/I/61fw7I5VRRL._AC_UF1000,1000_QL80_.jpg','Assasins Creed')
+    @include assignaturas('https://m.media-amazon.com/images/I/61fw7I5VRRL._AC_UF1000,1000_QL80_.jpg','Assasins Creed',top center)
 }
 .spiderman{
-    @include assignaturas('https://addons-media.operacdn.com/media/CACHE/images/themes/95/123395/1.0-rev1/images/d40b13ad-9468-4ebd-8a47-8a8ac1ee783b/66e4435cda17193b5b419081112e33dd.jpg','Spiderman')
+    @include assignaturas('https://addons-media.operacdn.com/media/CACHE/images/themes/95/123395/1.0-rev1/images/d40b13ad-9468-4ebd-8a47-8a8ac1ee783b/66e4435cda17193b5b419081112e33dd.jpg','Spiderman',top center)
 }
 .rached{
-    @include assignaturas('https://i.pinimg.com/550x/1e/03/d2/1e03d2970d5996a154c5750018f7fb0c.jpg','Rached and Clank')
+    @include assignaturas('https://i.pinimg.com/550x/1e/03/d2/1e03d2970d5996a154c5750018f7fb0c.jpg','Rached and Clank',top center)
+}
+.ghost{
+    @include assignaturas('https://media.es.wired.com/photos/6467a3fda566376ee967bc69/16:9/w_2560%2Cc_limit/GhostOfTsushima.jpeg','Ghost of tsushima',top center)
+}
+.stray{
+    @include assignaturas('https://cdn.cloudflare.steamstatic.com/steam/apps/1332010/capsule_616x353.jpg','Stray',top center)
+}
+.youtube{
+    @include assignaturas('https://www.youtube.com/img/desktop/yt_1200.png','Youtube',top center)
+}
+.video{
+    @include assignaturas('https://grupoaudiovisual.com/wp-content/uploads/2020/06/VFX-FX-Visual-Effects-Edicion-y-montaje-grupoaudiovisual.jpg','Edición de video',top center)
+}
+.patreon{
+    @include assignaturas('https://1000logos.net/wp-content/uploads/2021/05/Patreon-logo-2013.png','Patreon', center)
+}
+.instagram{
+    @include assignaturas('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png','Instagram',center)
 }
 .hora-de-comer{
-    @include assignaturas('https://i.pinimg.com/550x/1e/03/d2/1e03d2970d5996a154c5750018f7fb0c.jpg','')
+    background-color: rgb(253, 0, 42);
+    &::before{
+        content:'😀HORA DE COMER😀';
+        color: black;
+    }
+    &:hover{
+        animation-name: hora-de-comer;
+        animation-duration: 4s;
+        animation-timing-function: ease;
+    }
+}
+@keyframes hora-de-comer {
+    0%{
+        background-color: rgb(253, 0, 42);
+    }
+    20%{
+        background-color: aqua;
+    }
+    40%{
+        background-color: greenyellow;
+    }
+    60%{
+        background-color: red;
+    }
+    80%{
+        background-color: orange;
+    }
+    100%{
+        background-color: rgb(253, 0, 42);
+    }
+
 }
 @keyframes  titulos{
     0%{
