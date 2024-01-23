@@ -150,6 +150,15 @@ tr:not(:first-child) > th:not(:first-child) {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
 }
+.godOf:hover {
+  animation-name: ocultacion-img, godOfWar;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.godOf:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .pokemon {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png");
@@ -162,9 +171,18 @@ tr:not(:first-child) > th:not(:first-child) {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
 }
+.pokemon:hover {
+  animation-name: ocultacion-img, pokemon;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.pokemon:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .assasins {
-  background-image: url("https://m.media-amazon.com/images/I/61fw7I5VRRL._AC_UF1000,1000_QL80_.jpg");
+  background-image: url("https://i.blogs.es/6e03e1/mirage-/450_1000.webp");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,6 +191,15 @@ tr:not(:first-child) > th:not(:first-child) {
   content: "Assasins Creed";
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
+}
+.assasins:hover {
+  animation-name: ocultacion-img, assasins;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.assasins:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .spiderman {
@@ -186,6 +213,15 @@ tr:not(:first-child) > th:not(:first-child) {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
 }
+.spiderman:hover {
+  animation-name: ocultacion-img, spiderman;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.spiderman:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .rached {
   background-image: url("https://i.pinimg.com/550x/1e/03/d2/1e03d2970d5996a154c5750018f7fb0c.jpg");
@@ -197,6 +233,15 @@ tr:not(:first-child) > th:not(:first-child) {
   content: "Rached and Clank";
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
+}
+.rached:hover {
+  animation-name: ocultacion-img, rached;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.rached:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .ghost {
@@ -210,6 +255,15 @@ tr:not(:first-child) > th:not(:first-child) {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
 }
+.ghost:hover {
+  animation-name: ocultacion-img, pokemon;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.ghost:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .stray {
   background-image: url("https://cdn.cloudflare.steamstatic.com/steam/apps/1332010/capsule_616x353.jpg");
@@ -221,6 +275,15 @@ tr:not(:first-child) > th:not(:first-child) {
   content: "Stray";
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
+}
+.stray:hover {
+  animation-name: ocultacion-img, pokemon;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.stray:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .youtube {
@@ -234,6 +297,15 @@ tr:not(:first-child) > th:not(:first-child) {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
 }
+.youtube:hover {
+  animation-name: ocultacion-img, pokemon;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.youtube:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .video {
   background-image: url("https://grupoaudiovisual.com/wp-content/uploads/2020/06/VFX-FX-Visual-Effects-Edicion-y-montaje-grupoaudiovisual.jpg");
@@ -245,6 +317,15 @@ tr:not(:first-child) > th:not(:first-child) {
   content: "Edición de video";
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
+}
+.video:hover {
+  animation-name: ocultacion-img, pokemon;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.video:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .patreon {
@@ -258,6 +339,15 @@ tr:not(:first-child) > th:not(:first-child) {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
 }
+.patreon:hover {
+  animation-name: ocultacion-img, pokemon;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.patreon:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .instagram {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png");
@@ -269,6 +359,15 @@ tr:not(:first-child) > th:not(:first-child) {
   content: "Instagram";
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2px;
+}
+.instagram:hover {
+  animation-name: ocultacion-img, pokemon;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.instagram:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .hora-de-comer {
@@ -284,20 +383,71 @@ tr:not(:first-child) > th:not(:first-child) {
   animation-timing-function: ease;
 }
 
-@keyframes hora-de-comer {
+@keyframes godOfWar {
+  from {
+    background-position: top center;
+  }
+  to {
+    background-position: bottom center;
+  }
+}
+@keyframes pokemon {
+  from {
+    background-position-x: -100%;
+  }
+  to {
+    background-position-x: 200%;
+  }
+}
+@keyframes spiderman {}
+@keyframes rached {
+  from {
+    filter: none;
+  }
+  to {
+    filter: invert(150%);
+  }
+}
+@keyframes assasins {
   0% {
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 90%);
+  }
+  25% {
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 85%);
+  }
+  50% {
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 80%);
+  }
+  75% {
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 75%);
+  }
+  100% {
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 70%);
+  }
+}
+@keyframes ocultacion-img {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform-origin: top;
+    transform: scale(120%) translateY(10px);
+  }
+}
+@keyframes hora-de-comer {
+  0%, 19% {
     background-color: rgb(253, 0, 42);
   }
-  20% {
+  20%, 39% {
     background-color: aqua;
   }
-  40% {
+  40%, 59% {
     background-color: greenyellow;
   }
-  60% {
+  60%, 79% {
     background-color: red;
   }
-  80% {
+  80%, 99% {
     background-color: orange;
   }
   100% {
