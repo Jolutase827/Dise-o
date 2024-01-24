@@ -2,7 +2,12 @@
     background-image: url($imagen);
     background-position: $position;
     background-repeat: no-repeat;
-    background-size: cover;
+    @if $texto=='Pokemon'{
+        background-size: contain;
+    }@else{
+        background-size: cover;
+    }
+    
     &::before{
         content: $texto;
         background-color: rgba(0, 0, 0, 0.6);
@@ -93,22 +98,22 @@ tr:not(:first-child)>th:not(:first-child){
     @include assignaturas('https://i.pinimg.com/550x/1e/03/d2/1e03d2970d5996a154c5750018f7fb0c.jpg','Rached and Clank',top center,rached)
 }
 .ghost{
-    @include assignaturas('https://media.es.wired.com/photos/6467a3fda566376ee967bc69/16:9/w_2560%2Cc_limit/GhostOfTsushima.jpeg','Ghost of tsushima',top center,pokemon)
+    @include assignaturas('https://media.es.wired.com/photos/6467a3fda566376ee967bc69/16:9/w_2560%2Cc_limit/GhostOfTsushima.jpeg','Ghost of tsushima',top center,ghost)
 }
 .stray{
-    @include assignaturas('https://cdn.cloudflare.steamstatic.com/steam/apps/1332010/capsule_616x353.jpg','Stray',top center,pokemon)
+    @include assignaturas('https://cdn.cloudflare.steamstatic.com/steam/apps/1332010/capsule_616x353.jpg','Stray',top center,stray)
 }
 .youtube{
-    @include assignaturas('https://www.youtube.com/img/desktop/yt_1200.png','Youtube',top center,pokemon)
+    @include assignaturas('https://www.youtube.com/img/desktop/yt_1200.png','Youtube',top center,youtube)
 }
 .video{
-    @include assignaturas('https://grupoaudiovisual.com/wp-content/uploads/2020/06/VFX-FX-Visual-Effects-Edicion-y-montaje-grupoaudiovisual.jpg','Edición de video',top center,pokemon)
+    @include assignaturas('https://grupoaudiovisual.com/wp-content/uploads/2020/06/VFX-FX-Visual-Effects-Edicion-y-montaje-grupoaudiovisual.jpg','Edición de video',top center,video)
 }
 .patreon{
-    @include assignaturas('https://1000logos.net/wp-content/uploads/2021/05/Patreon-logo-2013.png','Patreon', center,pokemon)
+    @include assignaturas('https://1000logos.net/wp-content/uploads/2021/05/Patreon-logo-2013.png','Patreon', center,patreon)
 }
 .instagram{
-    @include assignaturas('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png','Instagram',center,pokemon)
+    @include assignaturas('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png','Instagram',center,insta)
 }
 .hora-de-comer{
     background-color: rgb(253, 0, 42);
@@ -122,8 +127,45 @@ tr:not(:first-child)>th:not(:first-child){
         animation-timing-function: ease;
     }
 }
+@keyframes video {
+    to{
+        filter: drop-shadow(16px 16px 20px red);
 
+    }
+}
+ @keyframes insta {
+    from{
+        background-position: top right;
+    }
+    to{
+        background-position: bottom left;
+    }
+ }
 
+@keyframes stray {
+    0%{
+        mask-size: 150%;
+    }
+    100%{
+        mask-size: 100%;
+    }
+}
+@keyframes youtube {
+    to{
+        background-position: center;
+        filter: blur(5px);
+    }
+}
+@keyframes patreon {
+    to{
+        filter: hue-rotate(90deg);
+    }
+}
+@keyframes ghost {
+    to{
+        filter: grayscale(80%);
+    }
+}
 @keyframes godOfWar {
     from{
         background-position: top center;
@@ -134,15 +176,21 @@ tr:not(:first-child)>th:not(:first-child){
 }
 @keyframes pokemon {
     from{
-        background-position-x: -100%;
+        background-size: 150%;
+        background-position-x: -50%;
     }
     to{
-        background-position-x: 200%;
+        background-size: 150%;  
+        background-position-x: 150%;
     }
 }
 @keyframes spiderman {
-    to{
-       
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-position: center 20%;
+        background-size: 150%;
     }
 }
 @keyframes rached {

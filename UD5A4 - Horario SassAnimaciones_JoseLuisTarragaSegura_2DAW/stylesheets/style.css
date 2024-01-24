@@ -164,7 +164,7 @@ tr:not(:first-child) > th:not(:first-child) {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .pokemon::before {
   content: "Pokemon";
@@ -256,7 +256,7 @@ tr:not(:first-child) > th:not(:first-child) {
   padding: 2px;
 }
 .ghost:hover {
-  animation-name: ocultacion-img, pokemon;
+  animation-name: ocultacion-img, ghost;
   animation-duration: 4s;
   animation-timing-function: linear;
 }
@@ -277,7 +277,7 @@ tr:not(:first-child) > th:not(:first-child) {
   padding: 2px;
 }
 .stray:hover {
-  animation-name: ocultacion-img, pokemon;
+  animation-name: ocultacion-img, stray;
   animation-duration: 4s;
   animation-timing-function: linear;
 }
@@ -298,7 +298,7 @@ tr:not(:first-child) > th:not(:first-child) {
   padding: 2px;
 }
 .youtube:hover {
-  animation-name: ocultacion-img, pokemon;
+  animation-name: ocultacion-img, youtube;
   animation-duration: 4s;
   animation-timing-function: linear;
 }
@@ -319,7 +319,7 @@ tr:not(:first-child) > th:not(:first-child) {
   padding: 2px;
 }
 .video:hover {
-  animation-name: ocultacion-img, pokemon;
+  animation-name: ocultacion-img, video;
   animation-duration: 4s;
   animation-timing-function: linear;
 }
@@ -340,7 +340,7 @@ tr:not(:first-child) > th:not(:first-child) {
   padding: 2px;
 }
 .patreon:hover {
-  animation-name: ocultacion-img, pokemon;
+  animation-name: ocultacion-img, patreon;
   animation-duration: 4s;
   animation-timing-function: linear;
 }
@@ -361,7 +361,7 @@ tr:not(:first-child) > th:not(:first-child) {
   padding: 2px;
 }
 .instagram:hover {
-  animation-name: ocultacion-img, pokemon;
+  animation-name: ocultacion-img, insta;
   animation-duration: 4s;
   animation-timing-function: linear;
 }
@@ -383,6 +383,43 @@ tr:not(:first-child) > th:not(:first-child) {
   animation-timing-function: ease;
 }
 
+@keyframes video {
+  to {
+    filter: drop-shadow(16px 16px 20px red);
+  }
+}
+@keyframes insta {
+  from {
+    background-position: top right;
+  }
+  to {
+    background-position: bottom left;
+  }
+}
+@keyframes stray {
+  0% {
+    mask-size: 150%;
+  }
+  100% {
+    mask-size: 100%;
+  }
+}
+@keyframes youtube {
+  to {
+    background-position: center;
+    filter: blur(5px);
+  }
+}
+@keyframes patreon {
+  to {
+    filter: hue-rotate(90deg);
+  }
+}
+@keyframes ghost {
+  to {
+    filter: grayscale(80%);
+  }
+}
 @keyframes godOfWar {
   from {
     background-position: top center;
@@ -393,13 +430,23 @@ tr:not(:first-child) > th:not(:first-child) {
 }
 @keyframes pokemon {
   from {
-    background-position-x: -100%;
+    background-size: 150%;
+    background-position-x: -50%;
   }
   to {
-    background-position-x: 200%;
+    background-size: 150%;
+    background-position-x: 150%;
   }
 }
-@keyframes spiderman {}
+@keyframes spiderman {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-position: center 20%;
+    background-size: 150%;
+  }
+}
 @keyframes rached {
   from {
     filter: none;
