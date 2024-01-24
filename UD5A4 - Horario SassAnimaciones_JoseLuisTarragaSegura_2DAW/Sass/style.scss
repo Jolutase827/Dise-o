@@ -141,13 +141,20 @@ tr:not(:first-child)>th:not(:first-child){
         background-position: bottom left;
     }
  }
-
-@keyframes stray {
-    0%{
-        mask-size: 150%;
+ @keyframes stray {
+    from{
+        mask-image: url('https://seeklogo.com/images/S/stray-logo-62B15531AF-seeklogo.com.png');
+        mask-size: 200%;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-mode: luminance;
     }
-    100%{
+    to{
+        mask-image: url('https://seeklogo.com/images/S/stray-logo-62B15531AF-seeklogo.com.png');
+        mask-repeat: no-repeat;
+        mask-position: center;
         mask-size: 100%;
+        mask-mode: alpha, match-source;
     }
 }
 @keyframes youtube {
