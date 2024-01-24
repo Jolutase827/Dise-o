@@ -143,14 +143,14 @@ tr:not(:first-child)>th:not(:first-child){
  }
  @keyframes stray {
     from{
-        mask-image: url('https://seeklogo.com/images/S/stray-logo-62B15531AF-seeklogo.com.png');
+        mask-image: url('../img/stray.png');
         mask-size: 200%;
         mask-repeat: no-repeat;
         mask-position: center;
         mask-mode: luminance;
     }
     to{
-        mask-image: url('https://seeklogo.com/images/S/stray-logo-62B15531AF-seeklogo.com.png');
+        mask-image: url('../img/stray.png');
         mask-repeat: no-repeat;
         mask-position: center;
         mask-size: 100%;
