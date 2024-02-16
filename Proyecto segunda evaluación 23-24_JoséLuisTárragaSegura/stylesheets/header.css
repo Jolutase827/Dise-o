@@ -1,0 +1,107 @@
+body {
+  overflow-x: hidden;
+}
+
+.fuente-titulo {
+  font-family: "Playfair Display", serif;
+}
+
+.rounded-left {
+  border-radius: var(--bs-border-radius) 0 0 var(--bs-border-radius);
+}
+
+.rounded-right {
+  border-radius: 0 var(--bs-border-radius) var(--bs-border-radius) 0;
+}
+
+.btn-buscar {
+  background-color: black;
+  border: solid 1px;
+}
+.btn-buscar:hover {
+  background-color: rgb(39, 39, 39);
+}
+.btn-buscar::before {
+  content: "Buscar";
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-idioma {
+  border: solid 3px rgb(53, 53, 53);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(53, 53, 53);
+}
+.btn-idioma:hover {
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+body > header {
+  height: 140px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+body > header > div:nth-child(1) {
+  background-color: white;
+  min-height: 100%;
+}
+body > header > div:nth-child(1) > a {
+  cursor: pointer;
+  transition: 0.4s;
+  min-height: 100%;
+  color: black;
+  text-decoration: none;
+}
+body > header > div:nth-child(1) > a:hover {
+  transition: 0.4s;
+  transform: scale(102%);
+}
+body > header > div:nth-child(1) > a > h1 {
+  font-family: "Playfair Display", serif;
+}
+body > header > div:nth-child(2) > div:nth-child(1) > a {
+  color: rgb(53, 53, 53);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+body > header > div:nth-child(2) > div:nth-child(1) > a:hover {
+  color: rgb(0, 0, 0);
+}
+body > header > div:nth-child(2) > div > div > input {
+  border: solid 1px black;
+}
+body > header > div:nth-child(2) > div > div {
+  position: relative;
+}
+body > header > div:nth-child(2) > div > div > i {
+  position: absolute;
+  left: 2%;
+}
+
+body > div:nth-child(2) {
+  height: 140px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.offcanvas-body > div {
+  width: 100%;
+}
+.offcanvas-body > div:hover {
+  box-shadow: var(--bs-box-shadow) !important;
+}
+.offcanvas-body > div > a {
+  color: rgb(53, 53, 53);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+.offcanvas-body > div > a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=header.css.map */

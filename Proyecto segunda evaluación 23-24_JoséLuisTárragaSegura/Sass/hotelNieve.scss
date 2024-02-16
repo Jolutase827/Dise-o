@@ -1,0 +1,115 @@
+$letra-titulo:"Playfair Display", serif;
+$letra-enlaces-botones:"Roboto", sans-serif;
+$letra-titulos-plano: "Noto Sans", sans-serif;
+$letra-titulos-plano-2: "Roboto Slab", serif;
+$letra-titulos-secundarios:"Gowun Batang", serif;
+$letra-bonita-corto: "Dancing Script", cursive;
+$color-header-letra: rgb(53, 53, 53);
+$color-header-letra-hover: rgb(0, 0, 0);
+
+main{
+    &>article:nth-child(1){
+        margin-top: 140px;
+        background-image: url('https://www.arquitecturaydiseno.es/medio/2022/12/02/7132hotel-2-preferred-hotels-y-resorts_39a81fed_2000x1419.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 82.5vh;
+        &>div{
+            height: 100%;
+            background-color: rgba(141, 141, 141, 0.4);
+            &>h1{
+                font-family: $letra-bonita-corto;
+                color: rgb(0, 0, 0);
+                border-radius: 50%;
+                background-color: rgba(250, 250, 250, 0.3);
+            }
+        }
+    }
+    &>article>h1{
+        font-family: $letra-titulos-secundarios;
+    }
+    &>article:nth-child(2){
+        &>section:nth-child(1){
+            &>h1{
+                font-family: $letra-titulos-secundarios;
+            }
+            &>div:nth-child(2){
+                &>div{
+                    &>h3{
+                        font-family: $letra-titulos-plano-2;
+                    }
+                    &>div{
+                        font-family: $letra-titulos-plano;
+                    }
+                }
+            }
+            &>div:nth-child(3)>div{
+                max-width: 450px;
+                height: 500px;
+                position: relative;
+                transition: 0.2s;
+                &:hover{
+                    transform: scale(102.5%);
+                    transition: 0.2s;
+                }
+            }
+            &>div:nth-child(3)>div>img{
+                width: 450px;
+                height: 350px;
+                &~h4{
+                    font-family: $letra-titulos-plano-2;
+                    font-weight: 400;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                &~div:nth-child(4){
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                }
+            }
+        }
+    }
+    
+    &>article:nth-child(3){
+        background-color: black;
+        color: white;
+        &>section{
+            color: white;
+            &>div{
+                height: 600px;
+            }
+        }
+    }
+    &>article:nth-child(4){
+        &>section>div{
+            &>h2{
+                font-family: $letra-titulo;
+            }
+            &>a{
+                font-family: $letra-titulos-plano-2;
+                color: black;
+                border: solid 2px rgba(0,0,0,0);
+                text-decoration: none;
+                &:hover{
+                    border-bottom: solid 2px black;
+                }
+            }
+        }
+    }
+}
+.carousel-item{
+    &>img{
+        transition: 0.3s;
+        &:hover{
+            opacity: 0.5;
+            transition: 0.3s;
+            &~div{
+                display: block  !important;
+            }
+        }
+    }
+}

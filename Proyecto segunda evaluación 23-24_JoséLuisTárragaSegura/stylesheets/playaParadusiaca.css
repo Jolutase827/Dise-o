@@ -1,0 +1,81 @@
+main {
+  background-color: goldenrod;
+  color: white;
+}
+main > article:nth-child(1) {
+  margin-top: 140px;
+  background-image: url("https://i.pinimg.com/originals/2f/b3/47/2fb347c264930aa33392bd1a47ea0331.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 82.5vh;
+}
+main > article:nth-child(1) > div {
+  height: 100%;
+  background-color: rgba(122, 122, 128, 0.3);
+}
+main > article:nth-child(1) > div > h1 {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+main > article > h1 {
+  font-family: "Gowun Batang", serif;
+}
+main > article:nth-child(2) > section:nth-child(1) > h1, main > article:nth-child(4) > section:nth-child(1) > h1 {
+  font-family: "Gowun Batang", serif;
+}
+main > article:nth-child(2) > section:nth-child(1) > div > div, main > article:nth-child(4) > section:nth-child(1) > div > div {
+  background-color: rgb(228, 173, 35);
+  max-width: 450px;
+  height: 500px;
+  position: relative;
+  transition: 0.2s;
+}
+main > article:nth-child(2) > section:nth-child(1) > div > div:hover, main > article:nth-child(4) > section:nth-child(1) > div > div:hover {
+  transform: scale(102.5%);
+  transition: 0.2s;
+}
+main > article:nth-child(2) > section:nth-child(1) > div > div > img, main > article:nth-child(4) > section:nth-child(1) > div > div > img {
+  width: 450px;
+  height: 350px;
+}
+main > article:nth-child(2) > section:nth-child(1) > div > div > img ~ h4, main > article:nth-child(4) > section:nth-child(1) > div > div > img ~ h4 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  color: black;
+  cursor: pointer;
+}
+main > article:nth-child(2) > section:nth-child(1) > div > div > img ~ h4:hover, main > article:nth-child(4) > section:nth-child(1) > div > div > img ~ h4:hover {
+  text-decoration: underline;
+}
+main > article:nth-child(2) > section:nth-child(1) > div > div > img ~ div:nth-child(4), main > article:nth-child(4) > section:nth-child(1) > div > div > img ~ div:nth-child(4) {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+main > article:nth-child(3) {
+  background-color: black;
+  color: white;
+}
+main > article:nth-child(3) > section {
+  color: white;
+}
+main > article:nth-child(3) > section > div {
+  height: 600px;
+}
+main > article:nth-child(5) > section > div > h2 {
+  font-family: "Playfair Display", serif;
+}
+main > article:nth-child(5) > section > div > a {
+  font-family: "Roboto Slab", serif;
+  color: black;
+  border: solid 2px rgba(0, 0, 0, 0);
+  text-decoration: none;
+}
+main > article:nth-child(5) > section > div > a:hover {
+  border-bottom: solid 2px black;
+}
+
+/*# sourceMappingURL=playaParadusiaca.css.map */

@@ -1,0 +1,21 @@
+
+$letra-titulo:"Playfair Display", serif;
+$letra-enlaces-botones:"Roboto", sans-serif;
+$letra-titulos-plano: "Noto Sans", sans-serif;
+$letra-titulos-plano-2: "Roboto Slab", serif;
+$letra-titulos-secundarios:"Gowun Batang", serif;
+$color-header-letra: rgb(53, 53, 53);
+$color-header-letra-hover: rgb(0, 0, 0);
+
+footer{
+    &>div:nth-child(1)>a{
+        color: $color-header-letra;
+        text-decoration: none;
+        &:hover{
+            color: $color-header-letra-hover;
+        }
+    }
+    &>div:nth-child(3){
+        font-family: $letra-titulo;
+    }
+}

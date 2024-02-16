@@ -1,0 +1,113 @@
+$letra-titulo:"Playfair Display", serif;
+$letra-enlaces-botones:"Roboto", sans-serif;
+$letra-titulos-plano: "Noto Sans", sans-serif;
+$letra-titulos-plano-2: "Roboto Slab", serif;
+$letra-titulos-secundarios:"Gowun Batang", serif;
+$color-header-letra: rgb(53, 53, 53);
+$color-header-letra-hover: rgb(0, 0, 0);
+
+@mixin header{
+    height: 140px;
+    position: fixed;
+    top: 0;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+.fuente-titulo{
+    font-family: $letra-titulo;
+}
+
+.rounded-left{
+    border-radius:  var(--bs-border-radius) 0 0 var(--bs-border-radius)  ;
+}
+
+.rounded-right{
+    border-radius: 0 var(--bs-border-radius) var(--bs-border-radius) 0 ;
+}
+.btn-buscar{
+    background-color: black;
+    border: solid 1px ;
+    &:hover{
+        background-color: rgb(39, 39, 39);
+    }
+    &::before{
+        content: "Buscar";
+        color: white;
+        font-family: $letra-enlaces-botones;
+    }
+}
+.btn-idioma{
+    border: solid 3px $color-header-letra;
+    background-color: rgba(0,0,0,0);
+    color: $color-header-letra;
+    &:hover{
+        border-color: $color-header-letra-hover;
+        color: $color-header-letra-hover;
+    }
+}
+body>header{
+    @include header;
+    z-index: 3;
+    &>div:nth-child(1){
+        background-color: white;
+        min-height: 100%;
+    }
+    &>div:nth-child(1)>a{
+        cursor: pointer;
+        transition: 0.4s;
+        min-height: 100%;
+        color: black;
+        text-decoration: none;
+    }
+    &>div:nth-child(1)>a:hover{
+        transition: 0.4s;
+        transform: scale(102%);
+    }
+    &>div:nth-child(1)>a>h1{
+        font-family: "Playfair Display", serif;
+    }
+    &>div:nth-child(2)>div:nth-child(1)>a{
+        color: $color-header-letra;
+        text-decoration: none;
+        font-family: $letra-enlaces-botones;
+        &:hover{
+            color: $color-header-letra-hover;
+        }
+    }
+    &>div:nth-child(2)>div>div>input{
+        border: solid 1px black;
+    }
+    &>div:nth-child(2)>div>div{
+        position: relative;
+    }
+    &>div:nth-child(2)>div>div>i{
+        position: absolute;
+        left: 2%;
+    }
+}
+body>div:nth-child(2){
+    @include header;
+    background-color: white;
+    z-index: 1;
+}
+.offcanvas-body{
+    &>div{
+            width: 100%;
+            &:hover{
+                box-shadow: var(--bs-box-shadow) !important;
+            }
+            &>a{
+                color: $color-header-letra;
+                text-decoration: none;
+                font-family: $letra-enlaces-botones;
+            &:hover{
+                color: $color-header-letra-hover;
+                text-decoration: underline;
+            }
+        }
+    }
+}

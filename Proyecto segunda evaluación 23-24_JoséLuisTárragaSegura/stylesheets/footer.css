@@ -1,0 +1,12 @@
+footer > div:nth-child(1) > a {
+  color: rgb(53, 53, 53);
+  text-decoration: none;
+}
+footer > div:nth-child(1) > a:hover {
+  color: rgb(0, 0, 0);
+}
+footer > div:nth-child(3) {
+  font-family: "Playfair Display", serif;
+}
+
+/*# sourceMappingURL=footer.css.map */
