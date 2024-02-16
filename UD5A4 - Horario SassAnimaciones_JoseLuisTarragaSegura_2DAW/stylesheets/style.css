@@ -398,17 +398,19 @@ tr:not(:first-child) > th:not(:first-child) {
 }
 @keyframes stray {
   from {
-    -webkit-mask-image: url("../img/Stray.png");
+    -webkit-mask-image: url("../img/stray.png");
     -webkit-mask-size: 200%;
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
+    -webkit-mask-position: bottom center;
     -webkit-mask-mode: luminance;
   }
   to {
-    -webkit-mask-image: url("../img/Stray.png");
+    -webkit-mask-image: url("../img/stray.png");
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: 60%;
+    -webkit-mask-position: bottom center;
+    -webkit-mask-size: 80%;
+    -webkit-mask-mode: alpha, match-source;
+    
   }
 }
 @keyframes youtube {
