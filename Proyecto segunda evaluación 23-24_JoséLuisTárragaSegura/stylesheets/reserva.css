@@ -1,0 +1,35 @@
+main {
+  margin-top: 200px;
+}
+main > article > section:nth-child(1) {
+  min-height: 60vh;
+}
+main > article > section:nth-child(1) > h2 {
+  font-family: "Gowun Batang", serif;
+}
+main > article > section:nth-child(1) > div > div:nth-child(1) > img {
+  transition: 0.3s;
+  cursor: pointer;
+}
+main > article > section:nth-child(1) > div > div:nth-child(1) > img:hover {
+  transform: scale(102%);
+  transition: 0.3s;
+}
+main > article > section:nth-child(1) > div > div:nth-child(1) > img:active {
+  transform: scale(250%);
+  position: relative;
+  z-index: 4;
+  margin: auto;
+  transition: 1s;
+}
+main > article > section:nth-child(1) > div > div:nth-child(2) > h4 {
+  font-family: "Noto Sans", sans-serif;
+}
+
+select {
+  background-color: white;
+  border: solid 3px black;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=reserva.css.map */

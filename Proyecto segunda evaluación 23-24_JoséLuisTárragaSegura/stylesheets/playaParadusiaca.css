@@ -26,31 +26,42 @@ main > article > h1 {
 main > article:nth-child(2) > section:nth-child(1) > h1, main > article:nth-child(4) > section:nth-child(1) > h1 {
   font-family: "Gowun Batang", serif;
 }
-main > article:nth-child(2) > section:nth-child(1) > div > div, main > article:nth-child(4) > section:nth-child(1) > div > div {
+main > article:nth-child(2) > section:nth-child(1) > div:nth-child(2), main > article:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
+  color: white;
+}
+main > article:nth-child(2) > section:nth-child(1) > div:nth-child(2) > div > h3, main > article:nth-child(4) > section:nth-child(1) > div:nth-child(2) > div > h3 {
+  color: black;
+  font-family: "Roboto Slab", serif;
+}
+main > article:nth-child(2) > section:nth-child(1) > div:nth-child(2) > div > div, main > article:nth-child(4) > section:nth-child(1) > div:nth-child(2) > div > div {
+  font-family: "Noto Sans", sans-serif;
+}
+main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div, main > article:nth-child(4) > section:nth-child(1) > div:nth-child(3) > div {
   background-color: rgb(228, 173, 35);
   max-width: 450px;
   height: 500px;
   position: relative;
   transition: 0.2s;
 }
-main > article:nth-child(2) > section:nth-child(1) > div > div:hover, main > article:nth-child(4) > section:nth-child(1) > div > div:hover {
+main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div:hover, main > article:nth-child(4) > section:nth-child(1) > div:nth-child(3) > div:hover {
   transform: scale(102.5%);
   transition: 0.2s;
 }
-main > article:nth-child(2) > section:nth-child(1) > div > div > img, main > article:nth-child(4) > section:nth-child(1) > div > div > img {
+main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div > img, main > article:nth-child(4) > section:nth-child(1) > div:nth-child(3) > div > img {
   width: 450px;
   height: 350px;
 }
-main > article:nth-child(2) > section:nth-child(1) > div > div > img ~ h4, main > article:nth-child(4) > section:nth-child(1) > div > div > img ~ h4 {
+main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div > img ~ h4 > a, main > article:nth-child(4) > section:nth-child(1) > div:nth-child(3) > div > img ~ h4 > a {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   color: black;
+  text-decoration: none;
   cursor: pointer;
 }
-main > article:nth-child(2) > section:nth-child(1) > div > div > img ~ h4:hover, main > article:nth-child(4) > section:nth-child(1) > div > div > img ~ h4:hover {
+main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div > img ~ h4 > a:hover, main > article:nth-child(4) > section:nth-child(1) > div:nth-child(3) > div > img ~ h4 > a:hover {
   text-decoration: underline;
 }
-main > article:nth-child(2) > section:nth-child(1) > div > div > img ~ div:nth-child(4), main > article:nth-child(4) > section:nth-child(1) > div > div > img ~ div:nth-child(4) {
+main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div > img ~ div:nth-child(4), main > article:nth-child(4) > section:nth-child(1) > div:nth-child(3) > div > img ~ div:nth-child(4) {
   position: absolute;
   bottom: 10px;
   right: 10px;

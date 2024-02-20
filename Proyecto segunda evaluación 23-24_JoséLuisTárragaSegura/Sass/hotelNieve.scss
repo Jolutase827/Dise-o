@@ -57,8 +57,10 @@ main{
             &>div:nth-child(3)>div>img{
                 width: 450px;
                 height: 350px;
-                &~h4{
+                &~h4>a{
                     font-family: $letra-titulos-plano-2;
+                    color: black;
+                    text-decoration: none;
                     font-weight: 400;
                     cursor: pointer;
                     &:hover{

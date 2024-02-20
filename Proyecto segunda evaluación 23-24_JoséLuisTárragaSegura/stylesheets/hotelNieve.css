@@ -42,12 +42,14 @@ main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div > im
   width: 450px;
   height: 350px;
 }
-main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div > img ~ h4 {
+main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div > img ~ h4 > a {
   font-family: "Roboto Slab", serif;
+  color: black;
+  text-decoration: none;
   font-weight: 400;
   cursor: pointer;
 }
-main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div > img ~ h4:hover {
+main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div > img ~ h4 > a:hover {
   text-decoration: underline;
 }
 main > article:nth-child(2) > section:nth-child(1) > div:nth-child(3) > div > img ~ div:nth-child(4) {

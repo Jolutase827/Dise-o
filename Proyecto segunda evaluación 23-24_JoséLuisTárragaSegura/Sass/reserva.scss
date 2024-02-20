@@ -1,0 +1,50 @@
+$letra-titulo:"Playfair Display", serif;
+$letra-enlaces-botones:"Roboto", sans-serif;
+$letra-titulos-plano: "Noto Sans", sans-serif;
+$letra-titulos-plano-2: "Roboto Slab", serif;
+$letra-titulos-secundarios:"Gowun Batang", serif;
+$letra-bonita-corto: "Dancing Script", cursive;
+$color-header-letra: rgb(53, 53, 53);
+$color-header-letra-hover: rgb(0, 0, 0);
+
+main{
+    margin-top: 200px;
+    &>article{
+        &>section:nth-child(1){
+            min-height: 60vh;
+            &>h2{
+                font-family: $letra-titulos-secundarios;
+            }
+            &>div{
+                &>div:nth-child(1){
+                    &>img{
+                        transition: 0.3s;
+                        cursor: pointer;
+                        &:hover{
+                            transform: scale(102%);
+                            transition: 0.3s;
+                        }
+                        &:active{
+                            transform: scale(250%);
+                            position: relative;
+                            z-index: 4;
+                            margin: auto;
+                            transition: 1s;
+                        }
+                    }
+                }
+                &>div:nth-child(2){
+                    &>h4{
+                        font-family: $letra-titulos-plano;
+                    }
+                }
+            }
+        }
+    }
+}
+select{
+    background-color: white;
+    border: solid 3px black ;
+    font-family: $letra-enlaces-botones;
+    
+}
