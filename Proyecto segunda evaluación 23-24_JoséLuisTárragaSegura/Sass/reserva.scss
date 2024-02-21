@@ -7,6 +7,10 @@ $letra-bonita-corto: "Dancing Script", cursive;
 $color-header-letra: rgb(53, 53, 53);
 $color-header-letra-hover: rgb(0, 0, 0);
 $valor:1;
+@function returnColor(){
+    $lista: (rgba(255, 0, 0, 0.527),rgba(0, 255, 0, 0.521),rgba(251, 255, 0, 0.658));
+    @return
+}
 
 main{
     margin-top: 200px;

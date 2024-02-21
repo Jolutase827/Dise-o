@@ -1,66 +1,17 @@
-main {
-  margin-top: 200px;
-}
-main > article > section:nth-child(1) {
-  min-height: 60vh;
-}
-main > article > section:nth-child(1) > h2 {
-  font-family: "Gowun Batang", serif;
-}
-main > article > section:nth-child(1) > div > div:nth-child(1) > img {
-  transition: 0.3s;
-  cursor: pointer;
-}
-main > article > section:nth-child(1) > div > div:nth-child(1) > img:hover {
-  transform: scale(102%);
-  transition: 0.3s;
-}
-main > article > section:nth-child(1) > div > div:nth-child(1) > img:active {
-  transform: scale(250%);
-  position: relative;
-  z-index: 4;
-  margin: auto;
-  transition: 1s;
-}
-main > article > section:nth-child(1) > div > div:nth-child(2) > h4 {
-  font-family: "Noto Sans", sans-serif;
-}
+/* Error: Expected expression.
+ *    ,
+ * 12 |     @return
+ *    |            ^
+ *    '
+ *   Sass/reserva.scss 12:12  root stylesheet */
 
-select {
-  background-color: white;
-  border: solid 3px black;
-  font-family: "Roboto", sans-serif;
-  height: 70px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a    \2577 \a 12 \2502      @return\a    \2502             ^\a    \2575 \a   Sass/reserva.scss 12:12  root stylesheet";
 }
-
-.diaOcupado {
-  background-color: gray;
-  color: white;
-}
-
-.calendario {
-  width: 300px;
-}
-
-.dias > div {
-  width: 14.28%;
-}
-.dias:nth-child(3) > div:not(.diaOcupado):hover {
-  box-shadow: var(--bs-box-shadow) !important;
-}
-
-.cursor-pointer {
-  cursor: pointer;
-  color: gray;
-}
-.cursor-pointer:hover {
-  color: rgb(0, 0, 0);
-}
-
-.hoy {
-  background-color: blue;
-  border-radius: 50%;
-  color: white;
-}
-
-/*# sourceMappingURL=reserva.css.map */
