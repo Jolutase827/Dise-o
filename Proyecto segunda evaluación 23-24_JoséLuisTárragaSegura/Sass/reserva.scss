@@ -6,6 +6,7 @@ $letra-titulos-secundarios:"Gowun Batang", serif;
 $letra-bonita-corto: "Dancing Script", cursive;
 $color-header-letra: rgb(53, 53, 53);
 $color-header-letra-hover: rgb(0, 0, 0);
+$valor:1;
 
 main{
     margin-top: 200px;
@@ -46,5 +47,34 @@ select{
     background-color: white;
     border: solid 3px black ;
     font-family: $letra-enlaces-botones;
-    
+    height: 70px;
+}
+.diaOcupado{
+    background-color: gray;
+    color: white;
+}
+.calendario{
+    width: 300px;
+}
+.dias{
+    &>div{
+        width: 14.28%;
+    }
+    &:nth-child(3)>div:not(.diaOcupado){
+        &:hover{
+            box-shadow: var(--bs-box-shadow) !important;
+        }
+    }
+}
+.cursor-pointer{
+    cursor: pointer;
+    color: gray;
+    &:hover{
+        color: $color-header-letra-hover;
+    }
+}
+.hoy{
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
 }
