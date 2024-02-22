@@ -8,8 +8,13 @@ $color-header-letra: rgb(53, 53, 53);
 $color-header-letra-hover: rgb(0, 0, 0);
 $valor:1;
 @function returnColor(){
-    $lista: (rgba(255, 0, 0, 0.527),rgba(0, 255, 0, 0.521),rgba(251, 255, 0, 0.658));
-    @return
+    $lista: ((rgba(255, 0, 0, 0.527),red),(rgba(251, 255, 0, 0.658),rgb(180, 180, 0)));
+    @if random($limit: 4)== 1{
+        @return nth($lista, random(2));
+    } @else{
+        @return null;
+    }
+   
 }
 
 main{
@@ -59,15 +64,51 @@ select{
 }
 .calendario{
     width: 300px;
+    position: relative;
+}
+.cerrar-reservar{
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    cursor: pointer;
+    &:hover{
+        color: gray;
+    }
 }
 .dias{
     &>div{
         width: 14.28%;
     }
     &:nth-child(3)>div:not(.diaOcupado){
+        &{
+            cursor: pointer;
+        }
         &:hover{
             box-shadow: var(--bs-box-shadow) !important;
         }
+        @for $i from 1 through 37{
+            &:nth-child(#{$i}){
+                $fondo-color:  returnColor();
+                @if $fondo-color != null{
+                    @if nth($fondo-color, 2 ) == red{
+                        cursor:not-allowed;
+                    }@else{
+                        &:active{
+                            background-color: rgb(128, 212, 128);
+                            transition: 0.3s;
+                        }
+                    }
+                    background-color: nth($fondo-color,1);
+                    color: nth($fondo-color,2);
+                } @else{
+                    &:active{
+                        background-color: rgb(128, 212, 128);
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+        
     }
 }
 .cursor-pointer{
@@ -81,4 +122,16 @@ select{
     background-color: blue;
     border-radius: 50%;
     color: white;
+}
+.reservar{
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-family: $letra-enlaces-botones;
+    border: 0;
+    &:hover{
+        background-color: rgb(39, 39, 39);
+        box-shadow: var(--bs-box-shadow) !important;
+    }
+
 }

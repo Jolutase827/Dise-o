@@ -1,17 +1,270 @@
-/* Error: Expected expression.
- *    ,
- * 12 |     @return
- *    |            ^
- *    '
- *   Sass/reserva.scss 12:12  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a    \2577 \a 12 \2502      @return\a    \2502             ^\a    \2575 \a   Sass/reserva.scss 12:12  root stylesheet";
+main {
+  margin-top: 200px;
 }
+main > article > section:nth-child(1) {
+  min-height: 60vh;
+}
+main > article > section:nth-child(1) > h2 {
+  font-family: "Gowun Batang", serif;
+}
+main > article > section:nth-child(1) > div > div:nth-child(1) > img {
+  transition: 0.3s;
+  cursor: pointer;
+}
+main > article > section:nth-child(1) > div > div:nth-child(1) > img:hover {
+  transform: scale(102%);
+  transition: 0.3s;
+}
+main > article > section:nth-child(1) > div > div:nth-child(1) > img:active {
+  transform: scale(250%);
+  position: relative;
+  z-index: 4;
+  margin: auto;
+  transition: 1s;
+}
+main > article > section:nth-child(1) > div > div:nth-child(2) > h4 {
+  font-family: "Noto Sans", sans-serif;
+}
+
+select {
+  background-color: white;
+  border: solid 3px black;
+  font-family: "Roboto", sans-serif;
+  height: 70px;
+}
+
+.diaOcupado {
+  background-color: gray;
+  color: white;
+}
+
+.calendario {
+  width: 300px;
+  position: relative;
+}
+
+.cerrar-reservar {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  cursor: pointer;
+}
+.cerrar-reservar:hover {
+  color: gray;
+}
+
+.dias > div {
+  width: 14.28%;
+}
+.dias:nth-child(3) > div:not(.diaOcupado) {
+  cursor: pointer;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):hover {
+  box-shadow: var(--bs-box-shadow) !important;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(1):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(2):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(3):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(4):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(5):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(6):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(7):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(8):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(9):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(10):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(11) {
+  cursor: not-allowed;
+  background-color: rgba(255, 0, 0, 0.527);
+  color: red;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(12):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(13) {
+  background-color: rgba(251, 255, 0, 0.658);
+  color: rgb(180, 180, 0);
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(13):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(14):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(15) {
+  cursor: not-allowed;
+  background-color: rgba(255, 0, 0, 0.527);
+  color: red;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(16):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(17) {
+  background-color: rgba(251, 255, 0, 0.658);
+  color: rgb(180, 180, 0);
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(17):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(18) {
+  background-color: rgba(251, 255, 0, 0.658);
+  color: rgb(180, 180, 0);
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(18):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(19):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(20) {
+  background-color: rgba(251, 255, 0, 0.658);
+  color: rgb(180, 180, 0);
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(20):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(21):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(22) {
+  background-color: rgba(251, 255, 0, 0.658);
+  color: rgb(180, 180, 0);
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(22):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(23) {
+  background-color: rgba(251, 255, 0, 0.658);
+  color: rgb(180, 180, 0);
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(23):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(24):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(25) {
+  cursor: not-allowed;
+  background-color: rgba(255, 0, 0, 0.527);
+  color: red;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(26):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(27) {
+  cursor: not-allowed;
+  background-color: rgba(255, 0, 0, 0.527);
+  color: red;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(28) {
+  cursor: not-allowed;
+  background-color: rgba(255, 0, 0, 0.527);
+  color: red;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(29):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(30):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(31):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(32):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(33) {
+  cursor: not-allowed;
+  background-color: rgba(255, 0, 0, 0.527);
+  color: red;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(34):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(35):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(36):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+.dias:nth-child(3) > div:not(.diaOcupado):nth-child(37):active {
+  background-color: rgb(128, 212, 128);
+  transition: 0.3s;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+  color: gray;
+}
+.cursor-pointer:hover {
+  color: rgb(0, 0, 0);
+}
+
+.hoy {
+  background-color: blue;
+  border-radius: 50%;
+  color: white;
+}
+
+.reservar {
+  width: 300px;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border: 0;
+}
+.reservar:hover {
+  background-color: rgb(39, 39, 39);
+  box-shadow: var(--bs-box-shadow) !important;
+}
+
+/*# sourceMappingURL=reserva.css.map */

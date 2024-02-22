@@ -1,0 +1,27 @@
+main{
+    min-height: 80vh;
+    margin-top: 200px;
+}
+.botones-perfil{
+    background-color: white;
+    border: 0;
+    &:hover{
+        text-decoration: underline;
+        &>i{
+            color: gray;
+        }
+    }
+}
+.boton-editar-datos{
+    background-color: black;
+    color: white;
+    border: 0;
+    transition: 0.3s;
+    &:hover{
+        transition: 0.3s;
+        background-color: rgb(53, 53, 53);
+    }
+}
+.w-400{
+    width: 400px;
+}

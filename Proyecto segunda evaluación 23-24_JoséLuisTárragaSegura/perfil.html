@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/perfil.css">
+    <title>HORLEWIS</title>
+</head>
+
+<body>
+    <header class="d-flex justify-content-between align-items-center col-12 ps-5 ">
+        <div class="col-5 d-flex align-items-center ps-5 ">
+            <a href="index.html" class="col-lg-2 col-md-3 col-4  d-flex align-items-center flex-column ">
+                <h1>HORLEWIS</h1>
+                <img src="img/logo.png" alt="Logo HORLEWIS" class="col-12" />
+            </a>
+        </div>
+        <div class="col-6 d-flex justify-content-between align-items-center">
+            <div class="col-xl-5 ps-4 col-6 d-flex justify-content-between d-none d-lg-flex">
+                <a href="index.html" class="">Inicio</a>
+                <a href="hotelplaya.html" class="">Playa</a>
+                <a href="hotelnieve.html" class="">Nieve</a>
+            </div>
+            <div class="col-12 col-lg-6 ps-3 d-flex align-items-center justify-content-between">
+                <div class="dropdown">
+                    <button class="btn-idioma p-2 dropdown-toggle shadow" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-globe"></i> ES
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">🇫🇷Francés</a></li>
+                        <li><a class="dropdown-item" href="#">🇪🇸Español</a></li>
+                        <li><a class="dropdown-item" href="#">🇩🇪Alemán</a></li>
+                        <li><a class="dropdown-item" href="#">🇵🇹Portugués</a></li>
+                        <li><a class="dropdown-item" href="#">🇬🇧Inglés</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-xl-8 d-flex   align-items-center">
+                    <i class="bi bi-search d-none d-xl-block"></i>
+                    <input type="text" class="rounded-left p-1 ps-4 col-7 shadow d-none d-xl-block">
+                    <button class=" btn-buscar rounded-right p-1 pe-2 ps-2 shadow d-none d-xl-block "></button>
+                    <button class="btn btn-dark d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                            class="bi bi-list"></i></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title fuente-titulo" id="offcanvasRightLabel">HORLEWIS</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column">
+                            <div class="ps-2">
+                                <a href="index.html">Inicio</a>
+                            </div>
+                            <div class="ps-2">
+                                <a href="hotelplaya.html">Playa</a>
+                            </div>
+                            <div class="ps-2">
+                                <a href="hotelnieve.html">Nieve</a>
+                            </div>
+                            <div class="ps-2">
+                                <a href="#contacto">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="col-12 shadow"></div>
+    <main class="col-12">
+        <article class="col-12 d-flex justify-content-center p-3">
+            <section class="col-md-8 col-12  shadow">
+                <div class="col-12" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="botones-perfil col-12 pt-3 px-3 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          <div>Información</div>
+                          <i class="bi bi-chevron-down me-4"></i>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body px-4 d-flex justify-content-center align-items-center flex-column">
+                            <img src="img/imagenPerfil.png" class="col-3 shadow rounded-pill" alt="">
+                            <label class="fw-semibold col-8 mt-4 ms-2">Nombre de usuario:</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control" value="ManuelElHospedajes53">
+                            </div>
+                            <label class="fw-semibold col-8 mt-2 ms-2">Nombre:</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control" value="Manuel">
+                            </div>
+                            <label class="fw-semibold col-8 mt-2 ms-2">Apellido/s:</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control" value="Cabañería Squilobs">
+                            </div>
+                            <label class="fw-semibold col-8 mt-2 ms-2">Contraseña:</label>
+                            <div class="col-8">
+                                <input type="password" class="form-control" value="HBFUGHBWR8Y2DAADkhjdjkahsfdhijuashfu342137">
+                            </div>
+                            <button class="boton-editar-datos rounded col-2 mt-3 py-2 px-3 mb-3 shadow">Editar datos</button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="botones-perfil collapsed col-12 px-3 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <div>Contacto</div><i class="bi bi-chevron-down me-4"></i>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body px-4 d-flex justify-content-center align-items-center flex-column">
+                            <label class="fw-semibold col-8 mt-2 ms-2">Correo electrónico:</label>
+                            <div class="col-8">
+                                <input type="email" class="form-control" value="manuelcab53@squilobs.es">
+                            </div>
+                            <label class="fw-semibold col-8 mt-2 ms-2">Nº Télefono:</label>
+                            <div class="col-8">
+                                <input type="tel" class="form-control" value="+34 611 479 031">
+                            </div>
+                            <button class="boton-editar-datos rounded col-2 mt-3 py-2 px-3 mb-3 shadow">Editar datos de contacto</button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="botones-perfil col-12 px-3 d-flex justify-content-between collapsed pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          <div>Reservas</div><i class="bi bi-chevron-down me-4"></i>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body px-4 py-3 mb-4 d-flex justify-content-center align-items-center flex-column">
+                            <div class="d-flex flex-wrap px-3 py-4 shadow col-11">
+                                <img src="img/hotelnieve1.jpg" alt="Hotel nieve" class="w-400">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </article>
+    </main>
+    <footer class="col-12 d-flex align-items-center flex-column mt-5">
+        <div class="d-flex justify-content-center col-6">
+            <a href="" class="me-4">Hoteles</a>
+            <a href="#" class="me-4">Inicio</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <hr class="col-6" />
+        <div class="d-flex justify-content-between align-items-center col-6 flex-wrap">
+            <div class="col-lg-2 ms-5 col-md-3 col-4  d-flex align-items-center flex-column mb-3">
+                <h1>HORLEWIS</h1>
+                <img src="img/logo.png" alt="Logo HORLEWIS" class="col-12" />
+            </div>
+            <h4>©José Luis Tárraga Segura - 2daw</h4>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

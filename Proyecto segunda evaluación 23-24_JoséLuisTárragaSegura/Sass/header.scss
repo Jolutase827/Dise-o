@@ -74,6 +74,7 @@ body>header{
         color: $color-header-letra;
         text-decoration: none;
         font-family: $letra-enlaces-botones;
+        cursor: pointer;
         &:hover{
             color: $color-header-letra-hover;
         }
@@ -104,6 +105,7 @@ body>div:nth-child(2){
                 color: $color-header-letra;
                 text-decoration: none;
                 font-family: $letra-enlaces-botones;
+                cursor: pointer;
             &:hover{
                 color: $color-header-letra-hover;
                 text-decoration: underline;
